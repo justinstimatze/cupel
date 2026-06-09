@@ -1,0 +1,79 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import clustersData from "@/data/clusters.json";
+import type { ClusterSpec } from "@/lib/types";
+
+export async function getStaticPaths() {
+  const clusters = clustersData as ClusterSpec[];
+  return clusters.map((cluster) => ({
+    params: { slug: cluster.slug },
+    props: { cluster },
+  }));
+}
+
+interface Props {
+  cluster: ClusterSpec;
+}
+
+const { cluster } = Astro.props;
+const base = import.meta.env.BASE_URL.replace(/\/+$/, "");
+
+const candidateClass =
+  "ml-2 inline-block px-2 py-px font-sans text-[12px] font-medium rounded-[6px] border border-amber-700/40 text-amber-300/90 bg-amber-900/20 align-[3px]";
+
+const description = `${cluster.name} cluster (${cluster.domain}) — ${cluster.status_prose.slice(0, 160)}`;
+---
+
+<Layout title={`${cluster.name} cluster — cupel`} description={description}>
+  <header class="mx-auto max-w-[760px] px-[22px] pt-[42px] pb-2">
+    <a
+      href={`${base}/clusters/`}
+      class="font-sans text-primary text-[12.5px] inline-block mb-[14px] no-underline hover:underline"
+      >&larr; all clusters</a
+    >
+    <h1
+      class="m-0 font-sans text-[34px] font-semibold tracking-[-0.01em] leading-[1.1] text-foreground"
+    >
+      {cluster.name} cluster
+      {cluster.candidate && <span class={candidateClass}>candidate</span>}
+    </h1>
+    <div class="font-sans text-[14px] text-dim mt-2 leading-[1.5]">
+      {cluster.domain}
+    </div>
+  </header>
+  <main
+    class="max-w-[760px] mx-auto px-[22px] py-2 pb-[60px] font-serif text-[16px] leading-[1.65] [&_h2]:font-sans [&_h2]:text-[20px] [&_h2]:font-semibold [&_h2]:mt-6 [&_h2]:mb-3 [&_h2]:text-primary [&_h2]:uppercase [&_h2]:tracking-[0.05em] [&_h2]:text-[14px] [&_p]:my-3 [&_b]:font-semibold [&_a]:text-primary [&_a]:underline-offset-[3px] hover:[&_a]:underline [&_code]:font-mono [&_code]:text-[14px] [&_code]:bg-bg-soft [&_code]:px-1 [&_code]:rounded-[3px]"
+    tabindex="-1"
+  >
+    {
+      cluster.intro_html && (
+        <p
+          class="text-[17px] leading-[1.6] text-ink-soft border-l-2 border-border pl-4 my-4"
+          set:html={cluster.intro_html}
+        />
+      )
+    }
+
+    <h2>Anchor works</h2>
+    <p set:html={cluster.specimens_html} />
+
+    <details
+      class="font-sans mt-8 [&_summary]:cursor-pointer [&_summary]:text-primary [&_summary]:text-[13.5px] [&_summary]:w-max [&_summary]:font-medium [&_summary]:block [&_summary]:uppercase [&_summary]:tracking-[0.05em] [&[open]_.arrow]:rotate-180"
+    >
+      <summary
+        >Catalog detail &mdash; status &amp; engines <span
+          class="arrow inline-block transition-transform">&darr;</span
+        ></summary
+      >
+      <div
+        class="font-serif text-[16px] leading-[1.65] [&_a]:text-primary [&_a]:underline-offset-[3px] hover:[&_a]:underline [&_code]:font-mono [&_code]:text-[14px] [&_code]:bg-bg-soft [&_code]:px-1 [&_code]:rounded-[3px]"
+      >
+        <h2>Status</h2>
+        <p set:html={cluster.status_html} />
+
+        <h2>Engines</h2>
+        <p set:html={cluster.engines_html} />
+      </div>
+    </details>
+  </main>
+</Layout>

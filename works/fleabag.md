@@ -1,0 +1,26 @@
+---
+work: Fleabag
+author: Phoebe Waller-Bridge (creator/writer/star)
+year: 2016 (s1), 2019 (s2) — BBC Three / Amazon
+medium: television series (comedy-drama / tragicomedy)
+backing: reviewed
+---
+
+## The reading
+
+**The bead.** A two-season British comedy-drama created by Phoebe Waller-Bridge — following an angry confused free-spirited London woman ("Fleabag," never named) running a failing guinea-pig-themed cafe and processing the recent death of her best friend Boo and her complicated relationship with her sister Claire, her remarried father, her stepmother — with the *direct-address-to-camera asides* as the structural device. The catalog's clearest specimen of *the double life via fourth wall break + virtue-of-defeat + caretaking* at the contemporary British tragicomedy register.
+
+**Engines**
+- **the double life** · content · spine · ~ — at the *Fleabag talking to the camera as her real self while performing her public self* register. Slot-1 (the unspeakable grief and guilt about Boo's death; the unprocessable family-dynamics; the sexual-performance-as-distraction); slot-2 (the maintained-double-life across two seasons: the camera-asides as the savored-secret narrative); slot-3 (Season 2 Episode 3, ~21:34 mark — the Hot Priest first *notices* Fleabag's aside-to-camera: "What was that?" → "Where'd you... where'd you just go?" → "You just... went somewhere." → "There. There." → "Where'd you just go?" The engine consummates the moment another person sees the savored-secret).
+- **virtue of defeat** · content · also-runs · ~ — at the *Boo's-death-is-Fleabag's fault and cannot be undone* register. Slot-1 (the second season's slow revelation: Fleabag slept with Boo's boyfriend; Boo killed herself, possibly inadvertently); slot-2 (Fleabag's sustained inability-to-name and inability-to-process); slot-3 (the eventual naming in the climactic scene with the Hot Priest's confessional). The engine pays out *honest-reckoning-without-redemption* — Fleabag is not absolved; Boo is still dead.
+- **caretaking/being-needed** · content · also-runs · ~ — at the *Fleabag's care for Claire across their distant-and-tangled relationship* register. Season 2's "she's hurting somewhere" recognition that brings Fleabag to the wedding scene is the engine's slot-3 — sisters caring across distance and rivalry as the show's emotional centerline.
+
+**The bundle.** A multi-engine tragicomedy specimen running the double life + virtue of defeat + caretaking through the fourth-wall-break mechanism. **Methodologically significant** for the catalog because Fleabag's structural commitment to *the audience-as-confidant* operates the double-life engine in a structurally unprecedented way — the engine's slot-3 (the savored-secret) is consummated when another character recognizes the audience-as-confidant. The Hot-Priest-notices-the-asides moment (S2E3, ~21:34 — quote verified verbatim against subtitle file_id 5056209) is the engine's most-direct on-screen recognition of the cupel-relevant mechanism. Pairs structurally with the catalog's existing slot-proven Pessoa heteronyms specimen at literary register.
+
+**Dual-use read.** *Clean enabling.* Waller-Bridge's structural commitment is to *the costs of the savored-secret* — Fleabag's double-life is not consequence-free; it isolates her, fuels her cruelty, prevents her grief from completing. The Season 2 narrative resolves the engine substantively rather than aesthetically: Fleabag's release of the camera-aside-confidant register (her walking-away-from-camera in the finale, refusing to bring the audience along) is the engine's *honest closure*. Value-flow: clean enabling at source.
+
+**Consumption.** Substantial cultural-and-critical reception — the *Hot Priest* phenomenon; the gallery-wedding speech (the "women are born with pain built in" speech delivered by Belinda in S2 — line widely-cited in critic-reception, not yet verified against subtitles); the substantial Emmy / BAFTA wins. The Waller-Bridge cultural-figure consumption-layer (Killing Eve, the No Time to Die script) runs at significant scale.
+
+**Verdict.** Foundational contemporary tragicomedy specimen running the double life via fourth-wall-break + virtue of defeat + caretaking. Methodologically innovative: the *audience-as-confidant* mechanism is the catalog's most-original contemporary double-life specimen. The Season 2 narrative-resolution (Fleabag releasing the audience-confidant register) demonstrates engine-honoring closure rather than engine-extending continuation.
+
+**Evidence.** `~ reviewed` — Waller-Bridge, Phoebe (creator/writer/star). *Fleabag.* BBC Three (s.1) / BBC One (s.2) / Amazon Studios, 2016, 2019 (2 series, 12 episodes). Wikipedia article consulted (`en.wikipedia.org/wiki/Fleabag`). Subtitle-verification status: the Hot-Priest recognition-line audited 2026-05-30 across S2E1, S2E2, S2E3, S2E4 — found only in **S2E3** (file_id 5056209), contracted form "Where'd you just go?" at ~21:34. Initial card's "where did you just go" wording (uncontracted) is why prior S2E1/S2E4 greps missed it; corrected and verified verbatim above. Cross-reference: (the double-life mode); [Seinfeld](/cupel/works/seinfeld/), [Curb Your Enthusiasm](/cupel/works/curb-your-enthusiasm/) (the parallel character-and-actor blurring at non-fourth-wall register).

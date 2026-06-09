@@ -1,0 +1,33 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import Header from "@/components/Header.astro";
+import HowToReadDisclosure from "@/components/HowToReadDisclosure.astro";
+import Paragons from "@/components/Paragons.astro";
+import WorkCard from "@/components/WorkCard.astro";
+import { FilterBar } from "@/components/FilterBar";
+import worksData from "@/data/works.json";
+import enginesData from "@/data/engines.json";
+import type { Work, EngineSpec } from "@/lib/types";
+
+const works = worksData as Work[];
+const engines = enginesData as EngineSpec[];
+const engineNames = engines.map((e) => e.slug).sort();
+---
+
+<Layout title="cupel — the wish-fulfillment engine browser">
+  <Header />
+  <HowToReadDisclosure />
+  <Paragons />
+  <FilterBar engines={engineNames} client:load />
+  <main class="max-w-[760px] mx-auto px-[22px] pt-2 pb-[60px]" tabindex="-1">
+    <div
+      id="catalog-empty-state"
+      class="font-sans text-dim text-[13.5px] leading-[1.55] py-10 text-center"
+    >
+      Search by title or author, or pick a filter above, to browse the full
+      catalog. Or open one of the paragons above for a worked example of how
+      a card reads.
+    </div>
+    {works.map((work) => <WorkCard work={work} />)}
+  </main>
+</Layout>

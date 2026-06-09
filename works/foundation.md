@@ -1,0 +1,25 @@
+---
+work: "Foundation (and the Foundation trilogy: Foundation, Foundation and Empire, Second Foundation)"
+author: Isaac Asimov
+year: 1942–1950 (Astounding stories); 1951–1953 (Doubleday novel collections); later sequels through 1993
+medium: novel series (science fiction)
+backing: reviewed
+---
+
+## The reading
+
+**The bead.** Isaac Asimov's 1942-onward future-history sequence, collected into the *Foundation Trilogy* (1951-53), positing the science of *psychohistory* — Hari Seldon's statistical-mathematical method for predicting the broad arc of civilizations across millennia — and dramatizing the Foundation's millennium-long project to shorten the post-Galactic-Empire dark age from 30,000 to 1,000 years. The catalog's clearest specimen of *order/legibility at civilization scope via mathematical historiography* and a foundational SF specimen for the whole genre.
+
+**Engines**
+- **order/legibility** · content · spine · ~ — at the *psychohistory as the mathematics of civilization* register. Slot-1 (the chaos of decline; the lost knowledge of the Empire); slot-2 (Seldon's mathematical method; the Seldon Plan; the recorded predictions); slot-3 (the *Seldon Crises* at which the Foundation's leaders learn the predicted course is correct). Asimov's structural commitment to *the world is statistically legible at population-scope* is the engine's substantive content. Distinct from cupel's existing slot-proven detective-puzzle specimens (Holmes, Gold-Bug, Da Vinci Code) by the *civilizational-scope* and the *no-individual-investigator* register — Seldon is dead through most of the series; his prerecorded predictions function as the slot-2 mechanism.
+- **legacy/transcendence** · content · also-runs · ~ — at the *Seldon as already dead but Plan continues* register. The slot-3 of the engine is *Seldon's posthumous influence shaping the millennium* — distinct from the catalog's slot-proven Iliad's kleos register and from Sandman's position-survives-the-person register by the *mathematical-determinism* mode.
+
+**The bundle.** A multi-engine SF specimen running order/legibility-at-civilizational-scope + legacy at the *mathematical-determinism* register. **Methodologically significant** for the catalog as the order/legibility backing inventory's clearest specimen of the *algorithmic / machine-learning legibility* hole the inventory has named ([backings](/cupel/theory/backings/)). Asimov's psychohistory is *the foundational fictional treatment of statistical-prediction-as-civilizational-mastery* and structurally a predecessor of the contemporary algorithmic-prediction discourse. Sibling to Le Guin's *Always Coming Home* at legacy-as-curated-anthology register and to Watchmen at apotheosis-counterfeit register — three distinct foundational SF/graphic-novel treatments of the engine clusters cupel identifies.
+
+**Dual-use read.** *Substantively defensible at the structural conceit; complicated at the political register.* Asimov's commitment to *the predictability of civilization at statistical scope* is treated honestly within the series — the introduction of the Mule (Foundation and Empire) is structurally the engine's *self-prosecuting* element: a single individual whose mental-influence-power lies outside psychohistory's statistical predictions disrupts the Plan, forcing Asimov to introduce the Second Foundation to correct course. The slot-2 deficit risk shows where contemporary techno-Utopian readings of Foundation absorb the *psychohistory-as-actually-achievable* register without the Mule-and-Second-Foundation correction — Paul Krugman's documented influence of Foundation on economics career is one such reading. The cluster-recursion risk is real but the source-text's structural commitment honestly anticipates it. Value-flow: substantively-defensible at source.
+
+**Consumption.** Substantial influence on the whole SF genre; the 2021– Apple TV+ adaptation; the recurring references in tech-culture; Elon Musk's documented Foundation-as-influence claim; Krugman's career-Foundation claim. The Foundation as influence on tech billionaire canon is a cluster-recursion case worth noting in the cross-cluster doc.
+
+**Verdict.** Foundational SF specimen of order/legibility + legacy at civilizational-mathematical scope. The catalog's clearest specimen of the algorithmic-legibility backing the order/legibility inventory has named as a hole. Methodologically significant for cross-cluster work because the Foundation-canon's influence on tech-billionaire culture is itself a cluster-bridging case.
+
+**Evidence.** `~ reviewed` — Asimov, Isaac. *Foundation* (1951); *Foundation and Empire* (1952); *Second Foundation* (1953); subsequent extensions through 1993. Primary text not directly consulted; wikipedia search returned disambiguation between Isaac Asimov and the Foundation novel; the work's structural conceit and reception are widely documented. Cross-reference: [backings](/cupel/theory/backings/) (the algorithmic-legibility hole this specimen closes); (the Foundation as influence on tech billionaire canon as cluster-bridging case).

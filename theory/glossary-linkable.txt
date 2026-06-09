@@ -1,0 +1,93 @@
+# Glossary terms approved for auto-linking in dossier prose.
+#
+# One slug per line. Slugs match the `slug` field emitted by
+# `cupel build-data` for each glossary entry (see glossary.json).
+# Lines starting with `#` are comments; blank lines ignored.
+#
+# This file is the deliberate promotion gate the auto-linker in
+# cmd/cupel/parse.go reads. Without an entry here, a glossary term
+# gets a /glossary/#slug anchor page but is NEVER auto-linked from
+# dossier prose. Promotion is per-term; the bar is "this term names
+# distinct work prose can't, AND a reader clicking through is
+# meaningfully rewarded over reading the inline form."
+#
+# Cluster names (e.g. "the systemic-critique cluster" → /clusters/...)
+# are navigational, not jargon-density, and stay auto-linked
+# independently of this file.
+#
+# Tier 1 (irreducible: engine, slot, counterfeit, cluster, bead) is
+# excluded by the existing linker filter (single-word, <10 chars or
+# no hyphen). Those don't appear here because they don't need to —
+# every reader either knows them from context or they're explained
+# at first occurrence in the README.
+#
+# What IS here: multi-word terms naming distinct project work where
+# a definition click pays off. The pole-axis vocabulary, the
+# diagnostic moves, the backing grades, and wound-engine as a
+# discovered class.
+
+# --- pole-axis vocabulary ---
+# The dimension "pole" is reserved for: how a cluster's canonical text
+# positions itself relative to the cluster's slot-2 deficit. Used
+# heavily (partial-refusal 311 uses, pure-counterfeit 189 uses) and
+# load-bearing — the bistable-braid finding lives on this axis.
+partial-refusal-pure-counterfeit
+
+# --- backing grades ---
+# Tells the reader what evidence-level a card carries. slot-proven
+# means verbatim quotes confirm slots 1/2/3 of each claimed engine.
+# canonical-text means the work defines the cluster. Both fire
+# heavily across cards.
+slot-proven
+canonical-text
+
+# --- diagnostic moves ---
+# slot-2 deficit names the specific gap where the engine's substantive
+# work is missing or faked. wish-valence guard is the rule that bars
+# specimens whose payoff is bearer-realizable but routes a different
+# wish (the Scrooge-unleashing-vs-redemption test).
+slot-2-deficit
+wish-valence-guard
+
+# --- audience-pose machinery ---
+# consumption-counterfeit names the audience-pose counterfeit running
+# at a different engine than the content-layer (the wound-engine
+# class's class-level signature). Specific work, not prose-able.
+consumption-counterfeit
+
+# wound-engine SHOULD be here but the glossary entry's slug is "wound"
+# (single-word, fails the linker's ≥10-char / multi-word filter). If
+# wound's class definition gets promoted to a multi-word entry like
+# "wound engine" the slug becomes "wound-engine" and can be auto-linked.
+
+# --- NOT promoted (the session-shrapnel pile) ---
+#
+# These terms have glossary entries but are NOT auto-linked here.
+# Add them deliberately if a future audit confirms they earn it; the
+# default position is that each is either (a) a name for a finding
+# the dossier prose can carry on its own, or (b) shorthand for an
+# observation a reader doesn't need to chase a definition for.
+#
+#   bistable-braid
+#   gravitational-center
+#   antagonist-mode
+#   content-layer-consumption-layer
+#   character-engine-layer-reader-engine-layer
+#   engine-transmission-routes
+#   spectrum-with-bridges
+#   pole-uniformity-strand
+#   per-leg-pole-mixing
+#   intra-critique-bridge-subtype
+#   partial-refusal-via-leg-displacement
+#   cluster-internal-participant-refusal
+#   mastery-leg-two-register-finding
+#   gravitational-center-3-leg-plus-mastery-structure
+#   cluster-external-systemic-refusal
+#   dissolution-mechanism-pattern
+#   compound-cluster
+#   bridge-specimen
+#   primary-cluster-axis-three-way
+#
+# To audit current promotions:
+#   grep -v '^#' theory/glossary-linkable.txt | grep -v '^$' | sort
+wound-class

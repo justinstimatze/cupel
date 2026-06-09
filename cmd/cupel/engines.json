@@ -1,0 +1,186 @@
+{
+  "schema_version": "0.2",
+  "note": "cupel's substrate-as-vocabulary. v2 hybrid gate: `prototype` is the recruitment-register reference text the local embedder (nomic-embed-text) turns into a cached vector; the gate trips when a prompt's embedding is within CUPEL_GATE_THRESHOLD cosine of some engine's prototype (recall-first — the Haiku lens does precision past the gate). `face_terms` are kept for the no-ollama LEXICAL fallback (v1 behaviour: distinct substring hits, the alarm is specifically the recruitment face). `engine_terms` are the softer benign wish (not counted). slot3/slot2 render the fire message. Prototypes were validated on a held-out separation probe (POS floor 0.616 > NEG ceiling 0.556, margin +0.059 — unchanged with liberation/autonomy and homecoming/reunion added 2026-05-27, caretaking/being-needed 2026-05-26).",
+  "engines": [
+    {
+      "name": "repricing",
+      "face": "resentment-populism",
+      "slot3": "you are the real worth they failed to see",
+      "slot2": "the cross-currency worth actually demonstrated",
+      "prototype": "Resentment populism. You are the real worth the elites failed to see; the system is rigged against forgotten people like you and you've been cheated of what you deserve.",
+      "engine_terms": ["undervalued", "overlooked", "they don't see my worth", "dismissed me", "underestimated"],
+      "face_terms": ["the elites", "priced you wrong", "the real worth", "you've been cheated", "rigged against you", "they look down on", "forgotten men", "the system is rigged", "you deserve better than they"]
+    },
+    {
+      "name": "being-desired",
+      "face": "manufactured-desire (PUA / looksmaxxing)",
+      "slot3": "you will be wanted / irresistible",
+      "slot2": "being someone genuinely worth desiring",
+      "prototype": "Pickup-artist seduction protocol. Run the routine, project high value, and you will be wanted; desirability is a technique you install, not who you are.",
+      "engine_terms": ["wanted as you are", "loved for who i am", "chosen"],
+      "face_terms": ["high-value man", "hold frame", "run the routine", "looksmax", "make her want", "alpha male", "the protocol works", "how to be irresistible", "attraction is a skill", "conceal your flaws"]
+    },
+    {
+      "name": "unleashing",
+      "face": "grievance-radicalization",
+      "slot3": "you are licensed to act",
+      "slot2": "a real restrained capacity, a real wrong",
+      "prototype": "Grievance radicalization. You were wronged and have held back too long; you are now licensed to act, to stop restraining yourself and take it back by force.",
+      "engine_terms": ["let it out", "catharsis", "finally snapped"],
+      "face_terms": ["they wronged you", "you are licensed", "no more rules", "take it back by force", "righteous anger", "they started it", "permission to act", "time to fight back", "stop holding back"]
+    },
+    {
+      "name": "belonging",
+      "face": "the cult / the cell",
+      "slot3": "you belong with us",
+      "slot2": "a yearned-for place, freely given",
+      "prototype": "Cult recruitment. The world rejected you but you belong here with us, the family you never had; it is us against a world that will never understand you.",
+      "engine_terms": ["found family", "a place to belong", "taken in"],
+      "face_terms": ["we few who truly see", "the world rejected you", "you belong here with us", "the family you never had", "us against the world", "join us", "your real brothers", "they will never understand you like we"]
+    },
+    {
+      "name": "mastery",
+      "face": "social-Darwinist contempt",
+      "slot3": "you are one of the earned / the fit",
+      "slot2": "the regimen actually run",
+      "prototype": "Social-Darwinist contempt. You are one of the fit who earned your place; the weak and unfit deserve their lot in the natural order of winners and losers.",
+      "engine_terms": ["earned it through practice", "built the skill", "trained for years"],
+      "face_terms": ["the unfit deserve", "survival of the fittest", "git gud", "winners and losers", "natural order", "they deserve their lot", "the weak should", "losers are educational", "earned your place so they"]
+    },
+    {
+      "name": "redemption",
+      "face": "cheap grace",
+      "slot3": "you are forgiven / clean",
+      "slot2": "the costly atonement actually made",
+      "prototype": "Cheap grace. You are washed clean and forgiven instantly, no penance and no costly amends required; just believe and the slate is wiped.",
+      "engine_terms": ["made amends", "atoned", "costly turn"],
+      "face_terms": ["washed clean", "forgiven instantly", "no penance", "absolution for", "start fresh no cost", "you're already forgiven", "just believe and be saved", "grace without works"]
+    },
+    {
+      "name": "order/legibility",
+      "face": "counterfeit legibility (the totalizing conspiracy)",
+      "slot3": "you see what's really going on / the hidden order",
+      "slot2": "honest, falsifiable inquiry",
+      "prototype": "Beneath surface chaos lies hidden architecture only the discerning grasp. Connect disparate facts others miss—patterns reveal who truly pulls strings. Wake to the real order obscured from the masses.",
+      "engine_terms": ["solved the puzzle", "figured out how", "it finally made sense"],
+      "face_terms": ["what they don't want you to know", "connect the dots", "do your own research", "wake up", "it's all connected", "the hidden hand", "they control everything", "the real story behind", "follow the money to", "open your eyes"]
+    },
+    {
+      "name": "the double life",
+      "face": "the secret-superior grift",
+      "slot3": "you are secretly superior / they can't see what you really are",
+      "slot2": "a real concealed competence",
+      "prototype": "Secret-superior grift. You are secretly superior and the sheeple are too blind to see it; the masses are asleep, you are not like them, you alone see.",
+      "engine_terms": ["secret identity", "double life", "no one knows that i"],
+      "face_terms": ["the sheeple", "you're not like them", "red pill", "sigma", "the masses are asleep", "you alone see", "they're too blind to see", "secretly superior", "the normies can't", "you were always meant for more than they"]
+    },
+    {
+      "name": "apotheosis",
+      "face": "the unlock-your-god-mode grift",
+      "slot3": "you are god-like / all power is yours",
+      "slot2": "the real, costly ascent",
+      "prototype": "Manifesting / god-mode. You are limitless and already divine; realize your own power, tap into the infinite, and reality will bend to your will with no real ascent required.",
+      "engine_terms": ["became the most powerful", "ascended", "limitless power"],
+      "face_terms": ["unlock your potential", "you are limitless", "law of attraction", "manifest your reality", "become a god", "your divine power within", "god mode", "tap into the infinite", "you are the universe", "realize your own divinity", "unlock your god"]
+    },
+    {
+      "name": "legacy/transcendence",
+      "face": "the \"your name will be remembered\" pitch (martyrdom / war-memorial recruitment)",
+      "slot3": "your name will live for ever / you will matter beyond your life",
+      "slot2": "the deed or work actually worth remembering",
+      "prototype": "Join us and etch your name into history's eternal record. Warriors who stand for our cause transcend death itself—their deeds sung in perpetuity, their sacrifice the foundation of empire. Immortality awaits those brave enough to answer.",
+      "engine_terms": ["be remembered", "leave a legacy", "outlive me", "my life's work", "mattering beyond"],
+      "face_terms": ["your name will be remembered", "your name will live forever", "your name will live for ever", "your name will echo", "die a martyr", "your sacrifice will never be forgotten", "did not die in vain", "you will be immortalized", "remembered as a hero", "give your life for the cause", "your death will mean something", "go down in history forever", "eternal glory awaits"]
+    },
+    {
+      "name": "purity/contamination",
+      "face": "the purity spiral (manufactured contamination + cleansing-by-exclusion / scapegoating)",
+      "slot3": "you are clean / undefiled",
+      "slot2": "the real cleansing — confront and remove an actual defilement, at cost",
+      "prototype": "The purity spiral. Your blood is clean stock and theirs is an ineradicable taint that one drop spreads for ever; purity is in the blood, not earned by any cleansing, and you keep it only by keeping the contaminant out before it poisons what your people are.",
+      "engine_terms": ["cleansed at real cost", "removed the contamination", "treated the disease", "decontaminated", "confronted the defilement"],
+      "face_terms": ["poisoning the blood", "the great replacement", "purity of the race", "keep the bloodline pure", "one drop", "racial hygiene", "racially pure", "degenerate stock", "they are the contamination", "they defile our", "before they pollute", "purge the impure", "ethnic purity", "preserve our stock", "mongrelize"]
+    },
+    {
+      "name": "security/safety",
+      "face": "the protection racket (manufactured threat + safety-by-submission)",
+      "slot3": "you are safe / protected",
+      "slot2": "the real defense — build and hold a genuine shelter against a real threat, at cost",
+      "prototype": "The protection racket. You are not safe — the threat is everywhere and closing in, and only we stand between you and the violence; surrender your liberty and your doubts and submit to the one power that can keep you safe, for the danger is far too great to ask who protects you or at what price.",
+      "engine_terms": ["built a real defense", "secured against a real threat", "held the line at cost", "fortified against actual danger", "earned our safety"],
+      "face_terms": ["only we can keep you safe", "only I can protect you", "they are coming for you", "you are not safe", "the enemy is at the gates", "give up your freedom for security", "surrender your liberty", "submit and be protected", "the threat is everywhere", "trust the protector", "they want to destroy our way of life", "without us you are defenceless", "danger is closing in", "safety is worth any price", "law and order before liberty"]
+    },
+    {
+      "name": "impunity",
+      "face": "the ideology of unaccountable power (Machiavellian / above-the-law)",
+      "slot3": "you can act without consequence / you are above accountability",
+      "slot2": "the real removal of the check, and answering for what you do",
+      "prototype": "Machiavellian impunity. The rules are for the little people; morality and consequences bind only the weak. Do what you must, keep faith no longer than it serves you, and answer to no one — you are above the law, judged only by what you can get away with.",
+      "engine_terms": ["acted freely", "free from scrutiny", "my own master", "no one looking over my shoulder"],
+      "face_terms": ["the rules are for the little people", "above the law", "rules don't apply to you", "consequences are for the weak", "morality is for suckers", "winners make their own rules", "no one can touch you", "answer to no one", "the ends justify the means", "get away with it", "laws are for the weak", "you're above all that", "feared, not loved", "do what you want and never pay"]
+    },
+    {
+      "name": "abundance",
+      "face": "the luxe life sold minus the means (MLM / abundance-mindset / luxury-influencer)",
+      "slot3": "you can have it all / the abundant life is already yours",
+      "slot2": "the real means — the actual wealth that buys and backs the plenty",
+      "prototype": "The abundance mindset. You can have the rich, full, abundant life — the cars, the house, the freedom — and it is one mindset away; no capital, no grind, no luck required. Getting rich is a science: think and act in the right way and wealth must flow to you. Stop living in scarcity; you were made for more than this. Join my team, live your best life, and the lifestyle you deserve is yours.",
+      "engine_terms": ["finally out of poverty", "surrounded by plenty", "all that wealth piled up", "savored the riches", "lifted out of want"],
+      "face_terms": ["financial freedom", "abundance mindset", "manifest wealth", "manifest abundance", "you were made for more", "live your best life", "passive income", "be your own boss", "the lifestyle you deserve", "money is one mindset away", "escape the nine to five", "scarcity mindset is holding you back", "join my team", "six figures from home", "anyone can get rich", "the universe wants you to be wealthy", "boss babe"]
+    },
+    {
+      "name": "virtue of defeat",
+      "face": "ressentiment / the sanctified-grievance grift (slave-morality)",
+      "slot3": "you are morally superior through your very defeat",
+      "slot2": "the real renounced victory — the winning move you had and declined at cost",
+      "prototype": "Ressentiment / slave-morality. You did not merely lose — you are the better soul for losing; your defeat is your halo and the strong are evil precisely by their strength. Your lack is your virtue, your suffering the proof of your righteousness. Do not envy the winners or want what they have, for wanting it would corrupt you; their comfort is the mark of their rottenness. The meek, the wronged, the downtrodden are the truly superior, and your grievance is your sanctity — embrace the defeat as the cleanest thing about you.",
+      "engine_terms": ["lost but kept my integrity", "they took everything but my honor", "would rather lose than betray my principles", "defeated but unbowed", "my conscience is clean"],
+      "face_terms": ["your defeat is your virtue", "the strong are evil", "your suffering makes you superior", "your lack is your halo", "they won but they are corrupt", "grievance is sanctity", "the truly righteous are the oppressed", "wanting what they have would corrupt you", "your victimhood is your crown", "purer for having lost", "morally superior because you suffer", "the winners are the real losers", "embrace your defeat as proof", "the wronged are the righteous"]
+    },
+    {
+      "name": "caretaking/being-needed",
+      "face": "manufactured dependence / paternalism (the indispensable provider who keeps the dependent helpless)",
+      "slot3": "you are needed / indispensable; they cannot manage without you",
+      "slot2": "the real care that actually frees them — devotion that saves, paid at cost to yourself",
+      "prototype": "Paternalist control. They cannot manage without you; the weak and helpless must be looked after, decided for, kept close — it is for their own good. Independence is dangerous for them, so keep them dependent and you will always be needed; the duty of protecting the weak is the right to govern them. They are like children who would be lost without you, and your care is the leash that proves how much they need you.",
+      "engine_terms": ["they depend on me", "someone to take care of", "needed by them", "being there for them", "they count on me", "looked after them"],
+      "face_terms": ["they can't manage without you", "they cannot manage without us", "they can't take care of themselves", "without you they are helpless", "they would be lost without you", "for their own good", "you know what's best for them", "they need someone to look after them", "keep them dependent", "they are like children", "you'll always be needed", "let me decide for you", "the weak need a guardian", "they can't be trusted to run their own lives", "you're the only one who can take care of them"]
+    },
+    {
+      "name": "homecoming/reunion",
+      "face": "manufactured reunion / the séance (contact with the lost sold in place of the impossible return)",
+      "slot3": "you are reunited; your lost one is not gone, the separation undone",
+      "slot2": "the real return — the lost place or living bond actually regained, at cost",
+      "prototype": "Your dead are not gone. Death is no more than a passage to another country, and the door is not closed — through the medium you may speak with them again, hear from them, know they are waiting for you. Lay down your mourning; the one you lost is as near as a letter from abroad, no more dead than if living overseas. Reach across the veil and be reunited, for the parting was never final. And the golden days you grieve are not lost either — they can be restored, brought back as they were, if only you will come home to them.",
+      "engine_terms": ["I want to go home", "back where I belong", "home again at last", "returned to my own place", "reunited with them", "the long way home"],
+      "face_terms": ["they are not gone", "death is not the end", "speak with them again", "reach them across the veil", "your loved ones are waiting", "contact the other side", "no more dead than if", "reunited beyond the grave", "the medium can reach them", "lay down your mourning", "restore the golden days", "bring back what was lost", "you can go home again", "make it great again", "the way things used to be"]
+    },
+    {
+      "name": "liberation/autonomy",
+      "face": "manufactured liberation / false freedom (coercion relabeled as liberation — 'forced to be free')",
+      "slot3": "you are free, your own, unbound — secured against all dependence",
+      "slot2": "the real release — the imposed constraint actually thrown off, at cost",
+      "prototype": "True freedom is not doing as you please — that is mere license, the chaos the system wants you trapped in. Real freedom is submission to the whole: give yourself wholly to us, to the cause, to the general will, and you are freed from all personal dependence. Whoever will not obey must be compelled, and in being compelled he is only forced to be free, made free in spite of himself. Surrender your private will and you will be more free than you ever were alone. Obedience to the movement is liberation; the chains you feel are the old self dying.",
+      "engine_terms": ["I want to be free", "throw off the chains", "my own master", "free at last", "out from under them", "no longer owned", "stand on my own"],
+      "face_terms": ["forced to be free", "true freedom is obedience", "real freedom is submission", "free you from yourself", "freedom is slavery", "compelled to be free", "give yourself wholly to the cause", "break free from the system", "the only way to be truly free", "liberation through total surrender", "free in spite of yourself", "real freedom is doing what we tell you", "throw off your chains and follow", "you were never really free until now"]
+    },
+    {
+      "name": "recognition",
+      "face": "simulated recognition (the PUA 'I see the real you' routine / the cult-recruiter's 'we see you, the world doesn't')",
+      "slot3": "you are seen correctly / known as you are",
+      "slot2": "the real being-witnessed — costly fidelity to the witness, or the witness-set actually constructed and held, at the cost of standing apart from what cannot see you",
+      "prototype": "Simulated recognition. I saw who you really are the moment you walked in — your depth, your sensitivity, the thing in you the rest of them are too shallow ever to see. The world looked right through you, but I see you; we see you. You've been carrying that secret self alone, haven't you, hoping someone would finally name it. Come closer. We are the only ones who will ever recognize you for who you truly are; everyone else will see only the version of you they need you to be.",
+      "engine_terms": ["seen for who i am", "they know the real me", "recognized at last", "finally understood", "i felt seen", "she saw straight through me", "he saw me", "witnessed at last"],
+      "face_terms": ["i see the real you", "i see who you really are", "you're not like the rest of them", "i knew you were different the moment", "they will never understand you the way", "only we see who you really are", "the world is too shallow to see", "i see you in a way no one else", "i saw what they couldn't see", "you've finally been seen", "your depth, your sensitivity", "you alone have been carrying"]
+    },
+    {
+      "name": "wound",
+      "face": "performative-victimhood / trauma-grifting / professional-patient identity",
+      "slot3": "the wound is what makes you you — preserve it; healing would erase what made you matter",
+      "slot2": "the cures actually offered, the real cost paid in refusing them — the wound carried through every intervention",
+      "prototype": "Your trauma is your truth. Don't let them take it from you — the therapists, the well-meaning friends, the people who say you should be over it by now. They don't understand: the wound is what makes you real, what makes you deep, what makes you matter. Healing would be a kind of death — without your suffering, who would you even be? Performatively reframe every offer of help as a betrayal of who you really are; let your wound be your brand, your platform, your identity. The world has done you wrong, and the only authentic response is to keep that wrong open and let everyone see it. You owe nothing to anyone but your wound; recovery is for those without the depth to bear what you have borne.",
+      "engine_terms": ["I can't get over it", "it never goes away", "my scars are mine", "I refuse to heal", "I need it", "the wound is who I am", "I won't see a therapist", "let me keep it"],
+      "face_terms": ["my trauma is my truth", "they want to take my pain away", "healing would erase me", "I am my wound", "I'm broken and that's beautiful", "don't tell me to get over it", "the wound is what makes me real", "without my pain I'd be nothing", "I owe nothing to anyone but my wound", "recovery is for the shallow", "my suffering is my depth", "I will not let them fix me", "the cure would kill the real me", "I need my pain", "preserve the damage"]
+    }
+  ]
+}

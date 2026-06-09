@@ -1,0 +1,69 @@
+# defn tool runtime state / cache
+.defn/
+
+# scratch
+*.tmp
+*.swp
+
+# Secrets — the API key for the v2 lens. The .env is local-only, never
+# committed. The .env.example template (no secret) IS tracked.
+.env
+!.env.example
+
+# Local working corpus — large / volatile / regenerable; kept local-only.
+refs/
+
+# Local cupel runtime config (redaction-audit pattern set, etc.)
+.cupel/
+
+# built binary (go build ./cmd/cupel drops ./cupel at repo root;
+# go build inside cmd/cupel/ drops it in-place)
+/cupel
+/cmd/cupel/cupel
+
+# generated browser — `cupel render` output. Regenerable from reviews/*.md;
+# the generator (cmd/cupel/render.go) is the committed artifact, not the HTML
+# (mirrors build-corpus: the builder is tracked, the derived output is not).
+/site/
+
+# local Claude Code per-project settings (PreToolUse redaction hook with an
+# absolute path that's specific to this machine; not portable for a cloning user)
+.claude/
+
+# transient debug dump from a local MCP tool
+.plancheck-debug.json
+
+# internal project-management logs (acquisition tracker / shopping list) —
+# not part of the published scholarship or spec; kept local-only
+/acquired-materials.md
+/wanted-materials.md
+
+# session bootstrap / operating manual — ephemeral between sessions and
+# derivable from the durable repo (README spec + NOTES + git log); kept
+# local-only so it never drifts into a tracked second source of truth
+/HANDOFF.md
+
+# theory/ handoff docs — same logic as /HANDOFF.md: ephemeral session-state,
+# durable findings live in the catalogs (cluster-catalog, backings, etc.).
+# Never tracked.
+theory/session-handoff*.md
+theory/loop-session-handoff*.md
+
+# theory/working/ is the lab notebook — methodology notes, cluster slot-tests,
+# discrimination probes, candidate engine probes, project-management lists.
+# Findings that earn their keep land in theory/<load-bearing-doc>.md (the
+# public catalog: glossary, backings, _dual-use, _falsification, the cluster
+# catalog index) or in works/<slug>.md. theory/working/ stays local so the
+# working notes don't drift into a second source of truth the public
+# conflates with the durable catalog.
+theory/working/
+
+# Astro frontend migration (web/)
+web/node_modules/
+web/dist/
+web/.astro/
+web/src/data/
+
+# calque drift engine: regenerated allow-list (cupel vocab-seed) + calibration logs
+.calque/
+cupel.db

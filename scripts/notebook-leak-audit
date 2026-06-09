@@ -1,0 +1,79 @@
+#!/usr/bin/env bash
+# notebook-leak-audit — catch source-readable working-notes / session-trace
+# patterns before flipping the repo public. Exit 1 if any HIGH-severity
+# pattern is found in tracked markdown.
+#
+# Usage:
+#   ./scripts/notebook-leak-audit              # scan; exit 1 on hit
+#   ./scripts/notebook-leak-audit --quiet      # exit-status only, no output
+#
+# The patterns map to the agent's pre-flip audit (see also: theory/working/
+# is gitignored; refs to it from tracked docs are leaks). Scoped to tracked
+# files — anything gitignored is invisible to this scan.
+
+set -u
+
+quiet=0
+[ "${1-}" = "--quiet" ] && quiet=1
+
+# Tracked markdown only (git ls-files filters gitignored).
+files=$(git ls-files '*.md' | tr '\n' ' ')
+if [ -z "$files" ]; then
+  echo "notebook-leak-audit: no tracked markdown found." >&2
+  exit 0
+fi
+
+hits=0
+report() {
+  hits=$((hits + 1))
+  if [ "$quiet" -eq 0 ]; then
+    printf '\n=== %s ===\n%s\n' "$1" "$2"
+  fi
+}
+
+# Convert file list to array for safe expansion under xargs.
+read -ra file_array <<<"$files"
+
+# 1. Working-tree cross-refs (cleanest tell)
+out=$(rg -n 'theory/working/' "${file_array[@]}" 2>/dev/null)
+[ -n "$out" ] && report "theory/working/ refs (gitignored notebook leaked into public docs)" "$out"
+
+# 2. Dated revision parentheticals
+out=$(rg -n '\((revised|added|graduated|corrected|re-read|cleanup|newly added|post-) ?20[0-9]{2}-[0-9]{2}-[0-9]{2}' "${file_array[@]}" 2>/dev/null)
+[ -n "$out" ] && report "dated revision parentheticals" "$out"
+
+# 3. "The original YYYY-MM review" dossier antipattern
+out=$(rg -n -i 'the original 20[0-9]{2}(-[0-9]{2})? review' "${file_array[@]}" 2>/dev/null)
+[ -n "$out" ] && report "revision-archaeology in dossier prose" "$out"
+
+# 4. Session-narration prefixes
+out=$(rg -n -i '^\s*\*\*(Since|Discipline note|Engines \(revised|Open question 20[0-9]{2})' "${file_array[@]}" 2>/dev/null)
+[ -n "$out" ] && report "session-narration paragraph prefixes" "$out"
+
+# 5. TODO / FIXME / TBD / XXX / WIP markers
+out=$(rg -n '\b(TODO|FIXME|XXX|WIP|TBD)\b' "${file_array[@]}" 2>/dev/null)
+[ -n "$out" ] && report "TODO/FIXME/TBD/XXX/WIP markers" "$out"
+
+# 6. AI-conversation traces
+out=$(rg -n -i '(user-flagged|user-developed|per the user|the user (said|asked|pointed|flagged|noted|wants|wanted|told|procured|moved|caught)|as you (mentioned|noted))' "${file_array[@]}" 2>/dev/null)
+[ -n "$out" ] && report "AI-conversation / session-trace voice" "$out"
+
+# 7. Path leaks
+out=$(rg -n '(~/Documents/|/home/[a-z]|/Users/[a-z]|/tmp/[a-z])' "${file_array[@]}" 2>/dev/null)
+[ -n "$out" ] && report "literal local path leaks" "$out"
+
+# 8. Private-sibling project names (drop these as you flip more public)
+#    drivermap + hindcast are public per current author note; the rest are
+#    private or status-unclear. Tune as more flip.
+#    Skips "buddy" (too common as a generic word — accountability-buddy quotes
+#    etc. false-positive) and "defn" (too short — picks up code fragments).
+out=$(rg -n -w '(plancheck|cobalt|adit|claude-mv|slimemold|inkling)' "${file_array[@]}" 2>/dev/null)
+[ -n "$out" ] && report "private-sibling project name leaks" "$out"
+
+if [ "$hits" -gt 0 ]; then
+  [ "$quiet" -eq 0 ] && printf '\nnotebook-leak-audit: %d pattern(s) hit. Fix before flipping public.\n' "$hits" >&2
+  exit 1
+fi
+
+[ "$quiet" -eq 0 ] && echo "notebook-leak-audit: clean"
+exit 0

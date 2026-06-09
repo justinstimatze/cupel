@@ -1,0 +1,240 @@
+# theory/vocab-allowlist.txt — explicit allow-list for `cupel vocab-audit`.
+#
+# This file holds hyphenated compounds the gate should treat as known
+# vocabulary BEYOND the auto-seeded set (engine names, cluster slugs,
+# glossary slugs — all loaded at runtime, NOT duplicated here).
+#
+# Bar for adding an entry: the compound names distinct work the catalog
+# wants to keep at runtime AND it is not derivable from the auto-seeded
+# vocabulary AND its frequency is genuinely load-bearing (otherwise just
+# rewrite the prose so the compound drops below the gate threshold).
+#
+# One slug per line; # for comments; blank lines ignored.
+#
+# To audit current state:
+#   cupel vocab-audit
+#
+# To regenerate the auto-seed for reference:
+#   cupel vocab-audit --bootstrap
+#
+# The gate is WARN-only by default (exit 0). Flip to fail-loud with:
+#   cupel vocab-audit --strict
+#   CUPEL_VOCAB_AUDIT_STRICT=1 cupel vocab-audit
+
+# --- canonical methodology vocab (high-frequency, pervasive in README + theory) ---
+# Bar: term names a distinct concept the catalog uses everywhere and the
+# concept is documented somewhere (glossary, README, cluster-catalog).
+slot-test
+slot-tests
+wish-valence
+wish-fulfillment
+dual-use
+load-bearing
+bearer-realizable
+held-back
+held-backs
+on-page
+primary-text
+single-engine
+multi-engine
+candidate-engine
+cluster-catalog
+canonical-pair
+
+# --- pole / position vocab ---
+# Note: glossary Section 6 dimension 2 explicitly forbids `enabling-pole`
+# and `counterfeit-pole` compounds. Not promoted; vocab-audit surfaces
+# those as warnings so the catalog can be swept against the rule.
+pure-counterfeit-pole
+outside-critique
+cluster-internal
+participant-refusal
+participant-reckoning
+self-administered
+split-result
+pole-uniformity
+model-refusal
+
+# --- cluster + cluster-leg vocab ---
+cult-cluster
+impunity-leg
+mastery-leg
+recruitment-cluster
+recruitment-register
+founder-novel
+foundational-moment
+cross-cluster
+class-finding
+cluster-recursion
+sub-variant
+sub-modes
+
+# --- domain compounds ---
+in-copyright
+literary-fiction
+literary-canonical
+graphic-novel
+flat-earth
+prophet-gift
+self-actualization
+wisdom-tradition
+demand-side
+audience-pose
+meta-frame
+identity-signal
+found-family
+left-coded
+digital-condition
+gratify-by-refusing-to-give
+reckoning-without-redemption
+totalizing-frame
+
+# --- engine-variant references ---
+double-life
+also-run
+being-needed
+wish-payout
+
+# --- methodology compounds ---
+journalist-outside
+local-principle
+as-cultural-figure
+d/acc
+
+# --- engine-role pair compounds (engine + structural role) ---
+slot-tested
+apotheosis-counterfeit
+partial-refusal-pole
+sub-register
+trainable-craft
+structural-frame
+value-flow
+maximally-different
+cluster-bridging
+cluster-canonical
+reader-engine
+character-engine
+text-grounded
+in-group
+identity-purchase
+witness-set
+
+# --- third-tier sweep (12-15 range additions) ---
+cluster-counter
+cluster-counterfeit
+cluster-canon
+slot-anchors
+specimen-level
+verbatim-verified
+whitespace-normalized
+result-type
+consequence-free
+counterfeit-prone
+epic-fantasy
+multi-genre
+non-moral
+re-checked
+savored-secret
+scientific-pose
+stress-test
+wound-spine
+anti-prediction
+boundary-case
+bridge-position
+canon-winner
+compression-cluster
+cross-currency
+throwing-off
+
+# --- second-tier sweep (freq 10-50, methodology and domain vocab) ---
+# Promoted 2026-06-06 from `cupel vocab-audit --min 10` surface.
+# Bar: term names distinct methodology work OR is established domain
+# vocabulary the catalog uses precisely.
+cure-without-cost
+cure-shaped
+discrimination-test
+externally-adjudicated
+in-text
+counterfeit-leaning
+public-domain
+single-genre
+bearing-witness
+cultural-figure
+four-leg
+self-story
+first-person
+non-falsifiable
+non-falsifiability
+received-then-preserved
+received-wound
+subtitle-grounded
+trope-bundle
+two-register
+cross-specimen
+long-form
+supply-side
+vindication-solvent
+canon-founding
+class-level
+engine-density
+mastery-counterfeit
+pole-distribution
+romance-bundle
+charismatic-revelatory
+multi-bearer
+meta-finding
+masked-vigilante
+spectrum-with-bridges
+per-leg-pole-mixing
+intra-critique
+intra-critique-bridge
+counterfeit-operator-location
+under-represented
+apotheosis-leg
+refusal-mode
+outside-register
+god-like
+god-mode
+memetic-selection
+anti-racist
+mutual-aid
+non-fiction
+stand-up
+present-day
+resentment-populism
+follow-up
+well-documented
+physical-cosmology-empirically-defended
+e/acc
+recognition-refused
+mutual-loose-witness
+chosen-family
+wish-shape
+register-class
+honest-foreclosure
+addressed-to-the-impossible
+pole-space
+foreclosure-at-slot-3
+author-rendered
+bearer-acknowledged
+identity-ground
+autonomy-suspended
+cross-engine
+coerced-preservation
+sub-class
+constructive-rather-than-joined
+racial-passing
+
+# URL-path stems that appear in cluster + work cross-ref hrefs in rendered prose.
+# Added 2026-06-07 after the migrate-refs Pass 1 made `<a href="/cupel/works/SLUG/">`
+# patterns frequent enough to trip the calque vocab-check >=20 threshold.
+cupel/theory/cluster-catalog
+cupel/theory/counterfeit-catalog
+cupel/theory/backings
+cupel/theory/bundle-shape-catalog
+cupel/works/zero-to-one
+cupel/works/atomic-habits
+cupel/works/dianetics
+counterfeit-catalog
+bundle-shape-catalog
+foundational-moment-bistability

@@ -1,0 +1,26 @@
+---
+work: Anna Karenina
+author: Leo Tolstoy
+year: 1875–1877 (serial); 1878 (book)
+medium: novel (realist)
+backing: reviewed
+---
+
+## The reading
+
+**The bead.** Tolstoy's 1875-1878 realist novel — the second of his three major novels and the one he called his first true novel — following Anna Arkadyevna Karenina's extramarital affair with cavalry officer Count Vronsky across the destruction of her marriage and ultimately her suicide, weaving in parallel the substantive arc of Konstantin Levin (Tolstoy's autobiographical proxy) and his marriage to Kitty Shcherbatskaya through the rural-Russian-religious-philosophical questioning that culminates in Levin's substantive religious-experience at the novel's end. The catalog's foundational specimen of *parallel-protagonists running opposite-engine-arcs at long-novel scope*.
+
+**Engines**
+- **virtue of defeat** · content · spine · ~ — at the *Anna's affair cannot be sustained and the substantive suicide renders the engine at the novel's-tragic-pole* register. Slot-1 (Anna's structural-incompatibility-with-19c-Russian-aristocratic-society; her substantive-but-unsustainable love-for-Vronsky); slot-2 (Anna's long descent through opium-use, jealousy, paranoia; Tolstoy's structural commitment to *rendering Anna's-descent without softening into condemnation or redemption*); slot-3 (the train-suicide as the engine's substantive-tragic consummation — the train-motif throughout the novel pays out at the literal-suicide-by-train). Methodologically the catalog's clearest specimen of *virtue of defeat at tragic female protagonist register*.
+- **the double life** · content · also-runs · ~ — at the *Anna as public aristocratic wife and private affair with Vronsky* register. The novel's structural commitment to *making-the-affair-substantively-visible at increasing public-cost* operates the engine at the *cannot be sustained as double life* register.
+- **liberation/autonomy** (Levin parallel) · content · also-runs · ~ — at the *Levin's substantive religious experience at the novel's end as the parallel arc's-resolution* register. Levin's arc runs *opposite* to Anna's: where Anna's affair leads to destruction, Levin's marriage and his late-novel religious-experience leads to substantive-grounding. The novel's structural commitment to *the parallel-opposite-resolution* is the substantive content. Sibling to cupel's slot-proven Doll's House (Nora's break) and Gita (Krishna's discourse-as-liberation) by the *substantive religious-grounding as the resolution* register.
+
+**The bundle.** A multi-engine realist novel running virtue-of-defeat (Anna) + the double life (Anna) + liberation/autonomy (Levin) at the *parallel protagonists running opposite engine arcs at long-novel scope* register. **Methodologically significant** for the catalog as the clearest foundational specimen of *the engine-bundle running at parallel-protagonist scope across opposite-resolutions* — Tolstoy's structural commitment to *making Anna's-destruction and Levin's-grounding substantively-co-equal as the novel's substance* is methodologically distinct from single-protagonist engine specimens.
+
+**Dual-use read.** *Clean enabling.* Tolstoy's structural commitment to *Anna's substantive humanity even as her arc terminates in destruction* and to *Levin's substantive religious-grounding without softening into easy-resolution* is the substantive content. The slot-2 deficit risk shows where contemporary cultural reception consumed *the Anna-aesthetic* (the *I-have-read-Anna-Karenina* prestige-purchase identity-signal; the cinematic-adaptations focusing on the affair without the Levin-parallel; the Greta Garbo / Vivien Leigh / Keira Knightley adaptation register) without the substantive parallel-protagonist engagement. Value-flow: clean enabling at source.
+
+**Consumption.** Substantial canonical-literary footprint; consistent presence on greatest-novels-ever lists (Faulkner ranked it #1; Nabokov substantively wrote on it); substantial influence on subsequent realist-and-adultery-narrative canon; multiple film-and-television adaptations across a century. The consumption-layer reception runs at cultural-canon-monument scope with substantial Anna-focused-adaptation reception.
+
+**Verdict.** Foundational 19c Russian literary specimen of virtue-of-defeat (Anna) + the double life (Anna) + liberation/autonomy (Levin) at the parallel-protagonist register. Methodologically significant for the catalog as the cleanest foundational specimen of *engine bundle running at parallel protagonist scope across opposite resolutions*. Pairs with Brothers Karamazov (philosophical-theological-novel register) and Master and Margarita (Soviet-era-magical-realism register) as the catalog's three major Russian-canonical specimens.
+
+**Evidence.** `~ reviewed` — Tolstoy, Leo. *Anna Karenina.* Serialized in *The Russian Messenger* 1875-1877; book edition 1878. Primary text not directly consulted (public-domain Russian-text and Garnett 1901 English translation freely available); wikipedia article consulted (`en.wikipedia.org/wiki/Anna_Karenina`). Cross-reference: [The Brothers Karamazov](/cupel/works/the-brothers-karamazov/), [The Master and Margarita](/cupel/works/the-master-and-margarita/) (the other major Russian-canonical specimens).

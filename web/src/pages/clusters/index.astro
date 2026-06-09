@@ -1,0 +1,53 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import clustersData from "@/data/clusters.json";
+import type { ClusterSpec } from "@/lib/types";
+
+const clusters = clustersData as ClusterSpec[];
+const base = import.meta.env.BASE_URL.replace(/\/+$/, "");
+
+const candidateClass =
+  "ml-2 inline-block px-2 py-px font-sans text-[11px] font-medium rounded-[6px] border border-amber-700/40 text-amber-300/90 bg-amber-900/20 align-[2px]";
+---
+
+<Layout
+  title="cupel — the clusters"
+  description="A cluster is a group of works that recruit on the same engines — some running them honestly, others as counterfeits. Each row is one cluster's status, the engines it runs, and the works that anchor it."
+>
+  <header class="mx-auto max-w-[760px] px-[22px] pt-[42px] pb-2">
+    <a
+      href={`${base}/`}
+      class="font-sans text-primary text-[12.5px] inline-block mb-[14px] no-underline hover:underline"
+      >&larr; cupel</a
+    >
+    <h1
+      class="m-0 font-sans text-[34px] font-semibold tracking-[-0.01em] leading-[1.1] text-foreground"
+    >
+      The clusters
+    </h1>
+    <p class="font-sans text-[14px] text-dim mt-2 leading-[1.5]">
+      A cluster is a group of works that recruit on the same engines &mdash;
+      some running them honestly (the <i>partial-refusal pole</i>), others as
+      counterfeits (the <i>pure-counterfeit pole</i>). Each row is one
+      cluster's status, the engines it runs, and the works that anchor it.
+    </p>
+  </header>
+  <main class="max-w-[760px] mx-auto px-[22px] py-2 pb-[60px]" tabindex="-1">
+    {
+      clusters.map((c) => (
+        <a
+          href={`${base}/clusters/${c.slug}/`}
+          class="block bg-card border border-border rounded-[10px] p-[14px_18px] mb-[10px] no-underline text-foreground hover:border-primary transition-colors"
+        >
+          <b class="text-primary font-sans text-[15px] font-semibold tracking-[-0.005em]">
+            {c.name}
+          </b>
+          {c.candidate && <span class={candidateClass}>candidate</span>}
+          <span class="block text-dim font-sans text-[13px] mt-[3px] leading-[1.45]">
+            {c.domain}
+          </span>
+        </a>
+      ))
+    }
+  </main>
+</Layout>

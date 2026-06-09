@@ -1,0 +1,80 @@
+#!/usr/bin/env bash
+# Pre-commit: fast checks that mirror CI. Catches the typos and discipline
+# slips before they ride a push into the cloud. Heavier checks (tests) live in
+# pre-push. Install once after clone:
+#
+#   git config core.hooksPath scripts/git-hooks
+#
+# Override for an emergency commit (CI will still gate the push):
+#
+#   SKIP_HOOKS=1 git commit ...
+
+set -euo pipefail
+
+if [[ "${SKIP_HOOKS:-}" == "1" ]]; then
+    echo "pre-commit: SKIP_HOOKS=1 — skipping" >&2
+    exit 0
+fi
+
+REPO_ROOT="$(git rev-parse --show-toplevel)"
+cd "$REPO_ROOT"
+
+# Only run Go checks if any Go file is staged.
+if git diff --cached --name-only --diff-filter=ACMR | grep -q '\.go$'; then
+    echo "pre-commit: gofmt..." >&2
+    unformatted="$(gofmt -l ./cmd)"
+    if [[ -n "$unformatted" ]]; then
+        {
+            echo "pre-commit: gofmt needed on:"
+            echo "$unformatted"
+        } >&2
+        exit 1
+    fi
+    echo "pre-commit: go vet..." >&2
+    go vet ./...
+    echo "pre-commit: go build..." >&2
+    go build ./...
+fi
+
+# tag-audit + quotes-audit are fast — always run if any tracked .md is staged.
+# These scan the on-disk state (not the staged delta), which is the right
+# scope: drift in any tracked file blocks the commit.
+if git diff --cached --name-only --diff-filter=ACMR | grep -q '\.md$'; then
+    # db-sync: rebuild the SQLite structural index from MD. db-lint then
+    # fails on drift the front-matter accumulated (pending_refs that now
+    # resolve, theory targets that don't exist, etc.). Phase A part 2 made
+    # build-data read from this DB — the gate keeps it in sync.
+    echo "pre-commit: db-sync + db-lint..." >&2
+    go run ./cmd/cupel db-sync
+    go run ./cmd/cupel db-lint
+    echo "pre-commit: works-lint..." >&2
+    go run ./cmd/cupel works-lint
+    echo "pre-commit: clusters-lint..." >&2
+    go run ./cmd/cupel clusters-lint
+    echo "pre-commit: glossary-lint..." >&2
+    go run ./cmd/cupel glossary-lint
+    echo "pre-commit: tag-audit..." >&2
+    go run ./cmd/cupel tag-audit
+    echo "pre-commit: quotes-audit..." >&2
+    go run ./cmd/cupel quotes-audit
+    # vocab gate: the recall + gate now live in calque (the substrate-general
+    # drift engine). cupel only seeds the allow-list from its own catalogs;
+    # calque vocab-check is the gate. Warn-only at this threshold (|| true) —
+    # flip to --strict after the surface is swept to zero. Skips gracefully if
+    # calque isn't installed (go install github.com/justinstimatze/calque/cmd/calque).
+    if command -v calque >/dev/null 2>&1; then
+        echo "pre-commit: vocab-seed + calque vocab-check..." >&2
+        go run ./cmd/cupel vocab-seed > .calque/vocab-allowlist.txt
+        # Scope matches cupel's old vocab-audit: skip the reference corpus (refs/,
+        # external source texts) and the gitignored theory/working/ scratchpad.
+        calque vocab-check --min 20 --exclude 'refs/**,theory/working/**' --quiet || true
+    else
+        echo "pre-commit: calque not installed — skipping vocab gate (go install …/calque/cmd/calque)" >&2
+    fi
+    # notebook-leak-audit: catches working-notes / session-trace patterns that
+    # would become source-readable when the repo flips public. Hard gate.
+    echo "pre-commit: notebook-leak-audit..." >&2
+    ./scripts/notebook-leak-audit
+fi
+
+echo "pre-commit: ✓ all checks passed" >&2

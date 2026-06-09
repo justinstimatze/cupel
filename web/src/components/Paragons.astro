@@ -1,0 +1,68 @@
+---
+const base = import.meta.env.BASE_URL.replace(/\/+$/, "");
+const paragons = [
+  {
+    slug: "pride-and-prejudice",
+    title: "Pride and Prejudice",
+    engine: "repricing",
+    hook:
+      'Dismissed as "tolerable: but not handsome enough" and revalued in a different currency — wit, not beauty.',
+  },
+  {
+    slug: "the-wonderful-wizard-of-oz",
+    title: "The Wonderful Wizard of Oz",
+    engine: "homecoming/reunion",
+    hook:
+      "Offered beautiful Oz and chooses gray Kansas — home as home, refused for any better new tribe.",
+  },
+  {
+    slug: "les-miserables",
+    title: "Les Misérables",
+    engine: "redemption",
+    hook:
+      "The bishop's grace, the lifetime of substantive cost, the deathbed under the candlesticks — the longest, most worked-out redemption in the Western canon.",
+  },
+  {
+    slug: "watchmen",
+    title: "Watchmen",
+    engine: "apotheosis-antagonist-mode",
+    hook:
+      "Rorschach won't bend; Ozymandias kills millions to save the world — every kind of hero shown for what it actually costs.",
+  },
+  {
+    slug: "notes-from-the-underground",
+    title: "Notes from the Underground",
+    engine: "wound",
+    hook:
+      "A man who refuses every offer of comfort, every connection, every consolation — the bitterness of refusing is the payoff.",
+  },
+];
+---
+
+<section class="max-w-[760px] mx-auto mt-[22px] px-[22px]">
+  <h2
+    class="font-sans text-dim text-[12px] uppercase tracking-[0.08em] mb-[10px]"
+  >
+    Five paragons to start with
+  </h2>
+  <div class="space-y-2">
+    {
+      paragons.map((p) => (
+        <a
+          href={`${base}/works/${p.slug}/`}
+          class="block bg-card border border-border rounded-[10px] p-[12px_18px] no-underline text-foreground hover:border-primary transition-colors"
+        >
+          <span class="text-primary font-serif font-semibold tracking-[-0.005em] text-[15px]">
+            {p.title}
+          </span>{" "}
+          <span class="inline-block text-dim font-sans text-[11.5px] ml-[10px] py-px px-2 rounded-[6px] border border-border">
+            {p.engine}
+          </span>
+          <span class="block text-ink-soft font-serif text-[13.5px] mt-[6px] leading-[1.5]">
+            {p.hook}
+          </span>
+        </a>
+      ))
+    }
+  </div>
+</section>

@@ -1,0 +1,67 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import glossaryData from "@/data/glossary.json";
+import type { GlossaryEntry } from "@/lib/types";
+
+const entries = glossaryData as GlossaryEntry[];
+const base = import.meta.env.BASE_URL.replace(/\/+$/, "");
+
+// Group entries by section, preserving the order they appear in glossary.md.
+const sections: { title: string; entries: GlossaryEntry[] }[] = [];
+const indexBySection = new Map<string, number>();
+for (const entry of entries) {
+  if (!indexBySection.has(entry.section)) {
+    indexBySection.set(entry.section, sections.length);
+    sections.push({ title: entry.section, entries: [] });
+  }
+  sections[indexBySection.get(entry.section)!].entries.push(entry);
+}
+---
+
+<Layout
+  title="cupel — the glossary"
+  description="The ruthlessly small working vocabulary of the cupel catalog — engines, slots, clusters, poles, registers, named findings."
+>
+  <header class="mx-auto max-w-[760px] px-[22px] pt-[42px] pb-2">
+    <a
+      href={`${base}/`}
+      class="font-sans text-primary text-[12.5px] inline-block mb-[14px] no-underline hover:underline"
+      >&larr; cupel</a
+    >
+    <h1
+      class="m-0 font-sans text-[34px] font-semibold tracking-[-0.01em] leading-[1.1] text-foreground"
+    >
+      The glossary
+    </h1>
+    <p class="font-sans text-[14px] text-dim mt-2 leading-[1.5]">
+      The catalog&rsquo;s working vocabulary, ruthlessly small. Each term names
+      distinct work plain prose can&rsquo;t do; anything that doesn&rsquo;t
+      survive the bar gets rewritten in prose where it appears. Dossiers
+      auto-link multi-word terms back here on first occurrence.
+    </p>
+  </header>
+  <main
+    class="max-w-[760px] mx-auto px-[22px] py-2 pb-[60px] font-serif text-[16px] leading-[1.65] [&_a]:text-primary [&_a]:underline-offset-[3px] hover:[&_a]:underline [&_code]:font-mono [&_code]:text-[14px] [&_code]:bg-bg-soft [&_code]:px-1 [&_code]:rounded-[3px] [&_b]:font-semibold"
+    tabindex="-1"
+  >
+    {
+      sections.map((section) => (
+        <section class="mt-8">
+          <h2 class="font-sans text-[14px] font-semibold uppercase tracking-[0.05em] text-primary mt-6 mb-3">
+            {section.title}
+          </h2>
+          <dl class="space-y-8 [&_p>b:first-of-type]:font-sans [&_p>b:first-of-type]:text-primary [&_p>b:first-of-type]:text-[15px] [&_p>b:first-of-type]:font-semibold [&_p>b:first-of-type]:mr-1 [&_p>b:first-of-type]:tracking-[-0.005em]">
+            {section.entries.map((entry) => (
+              <div
+                id={entry.slug}
+                class="scroll-mt-6 target:bg-amber-900/10 target:rounded-[6px] target:px-2 target:py-2 target:-mx-2 transition-colors"
+              >
+                <div set:html={entry.definition_html} />
+              </div>
+            ))}
+          </dl>
+        </section>
+      ))
+    }
+  </main>
+</Layout>

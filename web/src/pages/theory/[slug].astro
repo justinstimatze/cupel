@@ -1,0 +1,110 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import theoryData from "@/data/theory.json";
+import type { TheoryDoc } from "@/lib/types";
+
+export async function getStaticPaths() {
+  const docs = theoryData as TheoryDoc[];
+  return docs.map((doc) => ({
+    params: { slug: doc.slug },
+    props: { doc },
+  }));
+}
+
+interface Props {
+  doc: TheoryDoc;
+}
+
+const { doc } = Astro.props;
+const base = import.meta.env.BASE_URL.replace(/\/+$/, "");
+const description = `${doc.title} — theory note in the cupel catalog.`;
+
+// Parse out H2 headings, add anchor IDs to the rendered body, and build a
+// table-of-contents list. Theory pages are long and the markdown source
+// doesn't carry an explicit TOC; this turns its H2 structure into nav.
+function slugifyHeading(text: string): string {
+  return text
+    .toLowerCase()
+    .replace(/[^a-z0-9\s-]/g, "")
+    .replace(/\s+/g, "-")
+    .replace(/-+/g, "-")
+    .replace(/^-|-$/g, "")
+    .slice(0, 60);
+}
+
+const headings: { id: string; text: string }[] = [];
+const seenIds = new Set<string>();
+function decodeEntities(s: string): string {
+  return s
+    .replace(/&#(\d+);/g, (_m, n) => String.fromCharCode(parseInt(n, 10)))
+    .replace(/&amp;/g, "&")
+    .replace(/&lt;/g, "<")
+    .replace(/&gt;/g, ">")
+    .replace(/&quot;/g, '"')
+    .replace(/&#x27;|&apos;/g, "'");
+}
+const bodyHtmlWithAnchors = doc.body_html.replace(
+  /<h2(?![^>]*\sid=)([^>]*)>([\s\S]*?)<\/h2>/g,
+  (_match, attrs, inner) => {
+    const text = decodeEntities(inner.replace(/<[^>]+>/g, "").trim());
+    let id = slugifyHeading(text);
+    if (!id) return `<h2${attrs}>${inner}</h2>`;
+    let suffix = 1;
+    while (seenIds.has(id)) {
+      suffix += 1;
+      id = `${slugifyHeading(text)}-${suffix}`;
+    }
+    seenIds.add(id);
+    headings.push({ id, text });
+    return `<h2 id="${id}"${attrs}>${inner}</h2>`;
+  },
+);
+const showToc = headings.length >= 3;
+---
+
+<Layout title={`${doc.title} — cupel`} description={description}>
+  <header class="mx-auto max-w-[760px] px-[22px] pt-[42px] pb-2">
+    <a
+      href={`${base}/`}
+      class="font-sans text-primary text-[12.5px] inline-block mb-[14px] no-underline hover:underline"
+      >&larr; cupel</a
+    >
+    <h1
+      class="m-0 font-sans text-[34px] font-semibold tracking-[-0.01em] leading-[1.1] text-foreground"
+    >
+      {doc.title}
+    </h1>
+  </header>
+  {
+    showToc && (
+      <nav
+        aria-label="On this page"
+        class="font-sans max-w-[760px] mx-auto px-[22px] mt-3 mb-2"
+      >
+        <details class="bg-card border border-border rounded-[10px] p-[10px_18px] text-[13px] [&_summary]:cursor-pointer [&_summary]:text-primary [&_summary]:font-medium [&_summary]:uppercase [&_summary]:tracking-[0.05em] [&_summary]:text-[12px] [&[open]_.arrow]:rotate-180">
+          <summary>
+            On this page
+            <span class="arrow inline-block transition-transform">&darr;</span>
+          </summary>
+          <ul class="mt-2 space-y-1 list-none pl-0">
+            {headings.map((h) => (
+              <li>
+                <a
+                  href={`#${h.id}`}
+                  class="text-ink-soft no-underline hover:text-primary hover:underline"
+                >
+                  {h.text}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </details>
+      </nav>
+    )
+  }
+  <main
+    class="max-w-[760px] mx-auto px-[22px] py-2 pb-[60px] font-serif text-[16px] leading-[1.65] [&_h2]:font-sans [&_h2]:text-[20px] [&_h2]:font-semibold [&_h2]:mt-6 [&_h2]:mb-3 [&_h2]:text-primary [&_h2]:uppercase [&_h2]:tracking-[0.05em] [&_h2]:text-[14px] [&_h2]:scroll-mt-4 [&_h3]:font-sans [&_h3]:text-[16px] [&_h3]:font-semibold [&_h3]:mt-5 [&_h3]:mb-2 [&_h3]:text-ink-soft [&_p]:my-3 [&_b]:font-semibold [&_a]:text-primary [&_a]:underline-offset-[3px] hover:[&_a]:underline [&_ul]:list-disc [&_ul]:pl-5 [&_ol]:list-decimal [&_ol]:pl-5 [&_li]:my-1 [&_blockquote]:border-l-2 [&_blockquote]:border-border [&_blockquote]:pl-3 [&_blockquote]:text-ink-soft [&_blockquote]:my-3 [&_code]:font-mono [&_code]:text-[14px] [&_code]:bg-bg-soft [&_code]:px-1 [&_code]:rounded-[3px] [&_hr]:border-border [&_hr]:my-6 [&_table]:my-4 [&_table]:w-full [&_table]:font-sans [&_table]:text-[14px] [&_table]:border-collapse [&_th]:font-semibold [&_th]:text-left [&_th]:px-2 [&_th]:py-2 [&_th]:border-b [&_th]:border-border [&_th]:text-ink-soft [&_td]:px-2 [&_td]:py-2 [&_td]:border-b [&_td]:border-border/40 [&_td]:align-top"
+    tabindex="-1"
+    set:html={bodyHtmlWithAnchors}
+  />
+</Layout>

@@ -1,0 +1,102 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+/* cupel palette — ported from cmd/cupel/render.go cssBlock.
+ *
+ * Two layers:
+ *   1. :root defines the cupel source-of-truth tokens
+ *   2. shadcn primitives expect canonical names (--background, --primary, etc.)
+ *      which we map to cupel tokens
+ *   3. @theme inline re-exposes these for Tailwind v4 utility generation
+ *      (so `bg-background`, `text-foreground`, `border-border` all work)
+ */
+
+:root {
+  /* cupel source-of-truth palette */
+  --cupel-bg: #16130f;
+  --cupel-bg-soft: #1d1812;
+  --cupel-card: #211c16;
+  --cupel-ink: #ece3d4;
+  --cupel-ink-soft: #d7c9b1;
+  --cupel-dim: #9c8f7a;
+  --cupel-accent: #c9a45e;
+  --cupel-border: #322a20;
+  --cupel-border-line: #4a3f30;
+  --cupel-destructive: oklch(0.65 0.2 27);
+
+  /* shadcn canonical tokens — mapped to cupel palette so all primitives
+   * render in-theme without per-component overrides */
+  --background: var(--cupel-bg);
+  --foreground: var(--cupel-ink);
+  --card: var(--cupel-card);
+  --card-foreground: var(--cupel-ink);
+  --popover: var(--cupel-card);
+  --popover-foreground: var(--cupel-ink);
+  --primary: var(--cupel-accent);
+  --primary-foreground: var(--cupel-bg);
+  --secondary: var(--cupel-bg-soft);
+  --secondary-foreground: var(--cupel-ink-soft);
+  --muted: var(--cupel-bg-soft);
+  --muted-foreground: var(--cupel-dim);
+  --accent: var(--cupel-bg-soft);
+  --accent-foreground: var(--cupel-ink);
+  --destructive: var(--cupel-destructive);
+  --destructive-foreground: var(--cupel-ink);
+  --border: var(--cupel-border);
+  --input: var(--cupel-border-line);
+  --ring: var(--cupel-accent);
+  --radius: 0.5rem;
+
+  /* cupel-specific palette names for utilities that aren't part of shadcn */
+  --cupel-color-dim: var(--cupel-dim);
+  --cupel-color-ink-soft: var(--cupel-ink-soft);
+  --cupel-color-accent: var(--cupel-accent);
+  --cupel-color-bg-soft: var(--cupel-bg-soft);
+}
+
+@theme inline {
+  /* Re-expose the canonical tokens so Tailwind generates utility classes:
+   * bg-background, text-foreground, border-border, ring-ring, etc. */
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  /* cupel-specific utilities */
+  --color-dim: var(--cupel-color-dim);
+  --color-ink-soft: var(--cupel-color-ink-soft);
+  --color-cupel-accent: var(--cupel-color-accent);
+  --color-bg-soft: var(--cupel-color-bg-soft);
+
+  --font-serif: "Source Serif 4", Charter, "Iowan Old Style", Georgia, serif;
+  --font-sans: Inter, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+
+@layer base {
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  body {
+    background: var(--background);
+    color: var(--foreground);
+    font-family: var(--font-serif);
+    font-feature-settings: "liga", "kern", "onum";
+    line-height: 1.65;
+  }
+}

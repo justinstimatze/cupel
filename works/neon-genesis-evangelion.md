@@ -1,0 +1,26 @@
+---
+work: Neon Genesis Evangelion (Shinseiki Evangerion)
+author: Hideaki Anno (dir.); Gainax / Tatsunoko Production (prod.)
+year: 1995–1996 (26 episodes) + films (1997, 2007–2021)
+medium: anime television series + films
+backing: reviewed
+---
+
+## The reading
+
+**The bead.** A 1995–96 Japanese anime series set in 2015 (fifteen years after a worldwide cataclysm) following teenage boy Shinji Ikari, recruited by his absent father Gendo to pilot an Evangelion biomechanical mecha defending the fortified city Tokyo-3 against beings called Angels — Hideaki Anno's mecha-genre deconstruction whose substantive subject is *the protagonists' mental health* and whose final episodes famously abandoned the mecha-plot for interior psychological-monologue. The catalog's clearest specimen of *mecha as armor against and mechanism for psychological collapse*.
+
+**Engines**
+- **virtue of defeat** · content · spine · ~ — at the *Shinji cannot become the hero the narrative demands* register. Slot-1 (Shinji's abandonment-anxiety; Misato's parental-substitution-failures; Rei's substitutability; Asuka's collapse; Gendo's instrumental-using of his son); slot-2 (the sustained refusal across 26 episodes to let any character become *the kind of person who manages*; the famous final two episodes' interior-monologue collapse of the mecha-genre's apparatus); slot-3 (the *End of Evangelion* film's literal everyone merging with the collective unconscious as the engine's most-extreme refusal of conventional resolution). Anno's structural commitment is *unflinching depiction of psychological-collapse-under-pressure* rather than its overcoming.
+- **apotheosis-antagonist-mode** · content · also-runs · ~ — at the *Instrumentality-Project-as-forced-merger* register. The series's central antagonist-conceit is that *forced-apotheosis is the catastrophe*: the dissolution of individual selves into the collective is the *bad outcome*, not the salvation. Distinct from the catalog's slot-proven apotheosis specimens (Faustus, Feyre/[ACOMAF](/cupel/works/a-court-of-mist-and-fury/)) by the *engine-running-as-the-threat* operation. Methodologically significant for cluster catalog as a clean *apotheosis-counterfeit dramatized as the antagonist-arc*.
+- **caretaking/being-needed** · content · also-runs · ~ — at the *Misato's failed attempt to be Shinji's-guardian-and-the-children's mutual care in the Evangelion bay* register. The engine pays out in fragments rather than at the resolution.
+
+**The bundle.** A multi-engine anime specimen running virtue-of-defeat + apotheosis-antagonist-mode + caretaking at the *mecha-deconstruction-as-psychological-render* register. **Methodologically significant** for the cluster catalog because Evangelion is the catalog's clearest specimen of *apotheosis as the thing being feared not celebrated* — the cluster's apotheosis-counterfeit (the optimized-self, the ascended-mode, the Big Self) is here dramatized as the *catastrophic outcome*. The Instrumentality-Project as the series's apocalyptic-threat is the catalog's clearest fictional rendering of *what the apotheosis-counterfeit-cluster looks like if you let it succeed*. The Eva-rebuild films (2007-2021) elaborate this further with the *Anno's-personal-recovery narrative* embedded in the rebuild-arc.
+
+**Dual-use read.** *Clean enabling at the substantive content; significant cluster-recursion at the fandom-consumption-layer.* Anno's structural commitment to *psychological-collapse-without-easy-resolution* is honored across both the series and the films; the *End of Evangelion* film in particular refuses to deliver the heroic resolution the genre would normally provide. The slot-2 deficit risk shows at the fandom consumption-layer where decades of theory-crafting, plug-suit-cosplay, the Rei vs Asuka as waifu discourse, and the series's symbol-use absorbed by alt-right symbolism-extraction have produced a complicated cultural footprint. Value-flow grade: clean enabling at source; complicated at fandom-consumption-layer.
+
+**Consumption.** Substantial global anime-fandom + the *Rebuild of Evangelion* tetralogy (2007-2021) extending the franchise + extensive merchandise + the consistent presence on greatest-anime-of-all-time lists + the Anno-as-cult-figure consumption-layer.
+
+**Verdict.** Foundational anime specimen of *apotheosis-as-the-antagonist-arc* — the catalog's clearest fictional rendering of what the recruitment-cluster's apotheosis-counterfeit looks like if you let it succeed. Methodologically significant for the cluster catalog's apotheosis-counterfeit specimens. Pairs with Cowboy Bebop as the catalog's two foundational anime specimens, running at opposite registers (Bebop's honest-craft-with-grief vs. Evangelion's apotheosis-as-catastrophe).
+
+**Evidence.** `~ reviewed` — Anno, Hideaki (dir.). *Neon Genesis Evangelion.* Gainax / Tatsunoko Production, 1995–1996 (26 episodes) + *End of Evangelion* (1997) + *Rebuild of Evangelion* film tetralogy (2007–2021). Primary text not directly consulted; wikipedia article consulted (`en.wikipedia.org/wiki/Neon_Genesis_Evangelion`). Cross-reference: [Cowboy Bebop](/cupel/works/cowboy-bebop/) (the parallel canonical-anime specimen at opposite register); (the apotheosis-counterfeit cluster Evangelion dramatizes the catastrophic-success of).

@@ -1,0 +1,95 @@
+---
+// Single work card for the catalog browser.
+// Carries data-* attributes so the FilterBar client island can show/hide
+// without rehydrating the whole card list (stays server-rendered).
+
+import type { Work } from "@/lib/types";
+
+interface Props {
+  work: Work;
+}
+
+const { work } = Astro.props;
+const base = import.meta.env.BASE_URL.replace(/\/+$/, "");
+
+const engineNames = work.engines.map((e) => e.name);
+const tiers = Array.from(new Set(work.engines.map((e) => e.tier)));
+const searchHaystack = `${work.work} ${work.author}`.toLowerCase();
+
+const badgeClass = (backing: string): string => {
+  if (backing === "slot-proven")
+    return "ml-2 inline-block px-2 py-px font-sans text-[12px] font-medium rounded-[6px] border border-green-700/40 text-green-300/90 bg-green-900/20 align-[3px]";
+  return "ml-2 inline-block px-2 py-px font-sans text-[12px] font-medium rounded-[6px] border border-border text-dim align-[3px]";
+};
+---
+
+<article
+  data-card
+  data-engines={engineNames.join("|")}
+  data-tiers={tiers.join("|")}
+  data-text={searchHaystack}
+  class="bg-card border border-border rounded-[12px] p-[22px_24px] flex flex-col gap-[11px] mb-4"
+  style="display: none"
+>
+  <h2
+    class="m-0 font-serif text-[22px] font-semibold text-primary leading-[1.25] tracking-[-0.005em]"
+  >
+    {
+      work.has_evidence ? (
+        <a
+          href={`${base}/works/${work.slug}/`}
+          class="text-primary no-underline hover:underline"
+        >
+          {work.work}
+        </a>
+      ) : (
+        work.work
+      )
+    }
+    <span class={badgeClass(work.backing)}>{work.backing}</span>
+  </h2>
+  <div class="font-sans text-dim text-[12.5px]">
+    {work.author}
+    {work.year && <span> · {work.year}</span>}
+    {work.medium && <span> · {work.medium}</span>}
+  </div>
+  {
+    work.author_note && (
+      <div class="font-sans text-[12px] text-amber-200/90 bg-amber-900/20 border-l-[3px] border-amber-700/50 px-3 py-1 rounded-r-md">
+        ⚠ {work.author_note}
+      </div>
+    )
+  }
+  {
+    work.bead_html ? (
+      <div class="font-serif" set:html={work.bead_html} />
+    ) : (
+      work.bead && <div class="font-serif">{work.bead}</div>
+    )
+  }
+  <div class="flex flex-wrap gap-[6px]">
+    {
+      work.engines.map((e) => {
+        const isExcluded = e.excluded;
+        const baseCls =
+          "font-sans text-[12px] py-px px-[7px] rounded-[6px] border";
+        const cls = isExcluded
+          ? `${baseCls} border-border text-dim/70 line-through`
+          : `${baseCls} border-border text-ink-soft bg-bg-soft`;
+        return (
+          <span class={cls}>
+            {e.name}
+            <span class="text-dim"> · {e.role}</span>
+            <span class="ml-[5px]">{e.tier}</span>
+          </span>
+        );
+      })
+    }
+  </div>
+  <a
+    href={`${base}/works/${work.slug}/`}
+    class="font-sans text-[13px] text-primary no-underline hover:underline"
+  >
+    {work.has_evidence ? "full review" : "read more"} &rarr;
+  </a>
+</article>
