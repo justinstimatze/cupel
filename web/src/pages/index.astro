@@ -11,7 +11,9 @@ import type { Work, EngineSpec } from "@/lib/types";
 
 const works = worksData as Work[];
 const engines = enginesData as EngineSpec[];
-const engineNames = engines.map((e) => e.slug).sort();
+// Filter by engine name, not slug: WorkCard emits engine *names* in
+// data-engines, so the FilterBar must offer the same names or nothing matches.
+const engineNames = engines.map((e) => e.name).sort();
 ---
 
 <Layout title="cupel — the wish-fulfillment engine browser">

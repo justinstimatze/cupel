@@ -412,25 +412,56 @@ func loadEngines(readmePath string, cards []workCard) []engineSpec {
 		}
 	}
 
+	// The "## The engines" section is a markdown table — one row per engine,
+	// `| [name](…/engines/<slug>/) | counterfeit |`, ordered by tag frequency.
+	// (It used to be `### Name — tagline` subsections; the table rewrite for the
+	// public README silently emptied this parser, blanking the /engines/ list.)
+	linkRe := regexp.MustCompile(`\[([^\]]+)\]\(([^)]+)\)`)
 	var specs []engineSpec
-	for _, chunk := range strings.Split(sect, "\n### ")[1:] {
-		nl := strings.Index(chunk, "\n")
-		if nl < 0 {
+	for _, line := range strings.Split(sect, "\n") {
+		line = strings.TrimSpace(line)
+		if !strings.HasPrefix(line, "|") {
 			continue
 		}
-		header := strings.TrimSpace(chunk[:nl])
-		name, tagline := header, ""
-		if d := strings.Index(header, " — "); d >= 0 {
-			name = strings.TrimSpace(header[:d])
-			tagline = strings.TrimSpace(header[d+len(" — "):])
+		// Split the row into trimmed cells, dropping the empties the leading
+		// and trailing pipes produce.
+		var cells []string
+		for _, c := range strings.Split(strings.Trim(line, "|"), "|") {
+			cells = append(cells, strings.TrimSpace(c))
 		}
+		if len(cells) < 2 {
+			continue
+		}
+		// Only data rows carry the engine link in column 1; the header and the
+		// `|---|` separator have none, so they fall through.
+		m := linkRe.FindStringSubmatch(cells[0])
+		if m == nil {
+			continue
+		}
+		name := strings.TrimSpace(m[1])
+		slug := engineSlugFromURL(m[2])
+		if slug == "" {
+			slug = slugify(name)
+		}
+		// The compact table carries no separate wish-tagline, so column 2 — the
+		// counterfeit, "the grift wearing its face" — becomes the engine's
+		// list/detail subtitle.
 		specs = append(specs, engineSpec{
-			Name: name, Tagline: tagline, Slug: slugify(name),
-			Body:  mdBlock(chunk[nl+1:]),
+			Name: name, Tagline: cells[1], Slug: slug,
 			Works: worksByEngine[strings.ToLower(name)],
 		})
 	}
 	return specs
+}
+
+// engineSlugFromURL pulls <slug> out of a `…/engines/<slug>/` link so the
+// generated pages match the README's canonical engine URLs exactly.
+func engineSlugFromURL(u string) string {
+	u = strings.Trim(strings.TrimSpace(u), "/")
+	if i := strings.LastIndex(u, "/"); i >= 0 {
+		return u[i+1:]
+	}
+	return ""
 }
 
 // --- linkify: post-process rendered HTML to clean up cross-refs ---
