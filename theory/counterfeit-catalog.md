@@ -515,6 +515,75 @@ The wish-valence guard ([Giovanni's Room](/cupel/works/giovannis-room/), [Stone 
 
 ---
 
+## repricing — the counterfeit: resentment / grievance-populism
+
+Repricing's counterfeit is **resentment / grievance-populism**: *you are worth far more than they ever paid you; you have been cheated of your due; the bill is theirs and it is coming.* It grants slot-3 (the revalued self — "I am worth more than the market said") while skipping slot-2 (the real cross-currency worth — the second axis on which the dismissed bearer genuinely measures higher): the badge of the cheated-but-superior handed to anyone with a grievance, no revaluation required, only an enemy to charge.
+
+**The wish (from the validated fiction).** Repricing's wish-valence guard: *the worth is real on a currency the first market couldn't price, and the revaluation is earned by that worth being genuinely there.* In *Pride and Prejudice* Elizabeth, dismissed in the stated beauty-market of the novel's opening, is repriced on a currency that market couldn't read — Darcy values "the liveliness of your mind" — and the worth was on the page the whole time. *A Wrinkle in Time* makes the cross-currency inversion explicit, the deficits revalued as the saving thing:
+
+> "Meg, I give you your faults" (*A Wrinkle in Time*)
+
+The benign face is real: *you may be worth more than the market that dismissed you priced you* — the dignity-restored gospel. It enables.
+
+**The hinge.** The same sentence — *they undervalued you; your true worth is higher* — reads two ways. Read as a claim about a **second real currency** (Elizabeth's wit, Meg's faults) it is repricing: the worth is there to be found. Read as a claim about **restitution owed** — they cheated you, the difference is a debt, collect it — it is grievance-populism. The first finds worth already present; the second converts the gap into a bill. Same wish (you are worth more than they paid), opposite object.
+
+**The counterfeit in the wild.** The grift keeps repricing's *currency* but swaps its *object*: instead of locating a real second axis of worth, it asserts the bearer was robbed on the first axis and routes the revaluation through an enemy who must pay. The recruit is handed the elevated identity — *you are the true elite, the real makers, cheated by parasites above or below* — with no cross-currency worth behind it, only the grievance and a target. The vindication is promised as restitution: they will be made to pay, and paying them back *is* your worth restored. This is the standing engine of resentment-populism — the demagogue's "you have been betrayed, and I will get it back for you" — where the dismissed are flattered into a superiority that costs them nothing to hold and binds them to the seller who names the enemy. (A canonical public-domain recruitment ancestor is queued; the contemporary populist register carries the face for now, as recognition's does — corroborated by the [Falsification log](/cupel/theory/falsification-log/)'s three-register hunt, which routes the *Communist Manifesto* (#61) and Catiline (#7990) through repricing's grievance charged to a named enemy.)
+
+**Distinct from virtue of defeat's ressentiment.** The nearest face, and the easy confusion (the contrast is drawn from the other side in the *virtue of defeat* section above). Both are resentment-driven revaluations of the strong, but they pull apart on what they promise: *repricing keeps the same currency and promises restitution* — "you were cheated; take it back; they'll pay" — the lack a wrong to be **reversed**, the move appetitive. *Virtue of defeat inverts the currency and promises sanctity* — "your defeat is your halo; wanting what they have would corrupt you" — the lack **sanctified**, not reversed. Grievance-populism is repricing's counterfeit precisely because it stays appetitive: it wants the due collected, not the wound crowned.
+
+**The guard / value-flow.** Benign when the revaluation rests on a worth really there, on a currency the first market mispriced (Elizabeth's mind, Meg's faults). Dark — recruitment — when the *feeling* of being the cheated-superior is sold with no second-currency worth behind it, charged to an enemy who must pay: the resentment-populist pitch, which hands the recruit a costless elevation and a target. The genuine engine finds worth already present and revalues at the cost of being truly seen; the counterfeit grants the cheated-elite identity with nothing behind it but the grievance — *slot-3 minus slot-2*.
+
+
+---
+
+## wound — the counterfeit: performative-victimhood / trauma-grifting
+
+Wound's counterfeit is **performative-victimhood / trauma-grifting**: *your hurt is your standing; the deeper the wound, the realer and the more owed you are; display it and the debt falls due.* It grants slot-3 (the wounded identity — the deeper, truer self the wound is supposed to certify) while faking slot-2 (the constitutive wound actually borne and *preserved through every offered cure at real cost*): the badge of the wounded handed to those who perform a hurt rather than carry one.
+
+**The wish (from the validated fiction).** Wound's mechanism is *gratify-by-refusing-to-give*: cures are offered, each at on-page cost, the bearer refuses each — the refusal IS the gratification, the wound preserved as the ground the identity stands on. The wish-valence guard returns NO to the cure-without-cost: the Underground Man would not be healed, because the wound is the only basis on which he outranks the cured —
+
+> "there is more life in me than in you" (*Notes from the Underground*)
+
+In *A Little Life* the cure-refusal is articulated in the bearer's own voice across forty years and every intervention offered:
+
+> "I need it. It makes things right" (*A Little Life*)
+
+The benign face is real and not a fault: some wounds *are* constitutive, and a life can be honestly built on carrying one. It enables.
+
+**The hinge.** The same gesture — *this hurt is who I am, and I will not be talked out of it* — reads two ways. Carried, with the cure genuinely offered and genuinely refused at cost (Jude turning down Andy, Harold, Willem; Holden refusing the wise-elder cure), it is the wound engine: the wound real and load-bearing. Performed, with no cure ever actually on the table because being-healed was never the danger — only being-doubted — it is the counterfeit: the wound displayed for the standing it confers, not borne for the identity it grounds. The cure-without-cost guard is exactly what separates them: the genuine bearer says *no* to the real cure; the grifter has no real cure to refuse.
+
+**The counterfeit in the wild.** The grift keeps wound's slot-3 — the moral weight, the unimpeachable depth, the special hearing the hurt commands — and strips the slot-2 that earns it: the wound is narrated as currency, escalated for audience, and defended not against a cure (none is wanted) but against any doubt that would devalue it. The tells are the inversions of the engine's own guard: the hurt *grows* with the size of the audience rather than staying constant; healing is treated as betrayal of the identity rather than refused at cost; the wound is *spent* — converted to deference, exemption, or a claim on others — rather than carried. This is the competitive-victimhood economy and the trauma-as-brand pipeline, where suffering is the entry ticket and the deepest-wounded wins the room. (A canonical public-domain recruitment ancestor is queued — the survivor-witness and conversion-testimony literatures flagged as open holes in the wound [backings inventory](/cupel/theory/backings/) are the likeliest hunt; the contemporary register carries the face for now, as recognition's does.)
+
+**Distinct from virtue of defeat, and from repricing.** Three resentment-adjacent faces sit close. *Virtue of defeat* sanctifies a **defeat** (the renounced victory) into a halo; *repricing* charges a **dismissal** as a debt to be collected; *wound* certifies a **hurt** as standing. They sort by what is held up: the renounced win, the cheated worth, the borne injury. Wound's counterfeit is the only one whose payoff is *the injury itself as credential* — not "I was right and refused to win," not "I am worth more than they paid," but "I was hurt, therefore I am owed and unanswerable."
+
+**The guard / value-flow.** Benign when the wound is real, constitutive, and carried — the cure honestly offered and honestly refused at cost (the catalog's load-bearing diagnostic: the bearer says NO to the cure-without-cost). Dark — recruitment — when the *display* of woundedness is the extraction vector: the hurt performed and escalated for the standing it buys, healing recast as betrayal, doubt as re-injury. The genuine engine carries the wound at the cost of every refused cure; the counterfeit spends the wounded identity with nothing borne behind it — *slot-3 minus slot-2*.
+
+
+---
+
+## unleashing — the counterfeit: grievance-radicalization
+
+Unleashing's counterfeit is **grievance-radicalization**: *you have been wronged past bearing; the restraint you've kept is the cage; you are now justified — owed, even — the discharge.* It grants slot-3 (the savored, licensed discharge of a held-back capacity) while faking slot-2 (a *real* held-back capacity and a *real*, proportionate wrong that triggers its release): the badge of the righteously-unleashed handed to those whose grievance was manufactured and whose "capacity" is only permission to harm.
+
+**The wish (from the validated fiction).** Unleashing's wish-valence guard: *the capacity is real and was held back at cost, the trigger is a real wrong — and the protagonist wants the discharge* (vs. redemption's dreaded reckoning). Jekyll names the held-back alter-self as innate and chosen-hidden, and welcomes its release:
+
+> "man is not truly one, but truly two" (*Dr Jekyll and Mr Hyde*, l. 2026)
+
+> "stripped off these lendings and spring headlong into the sea of liberty" (ll. 2183-2186)
+
+The Count means to *become* the discharge — "I wish to be Providence myself" (*The Count of Monte Cristo*) — and the text prosecutes its own trigger through Mercédès ("And why do you represent Providence?"). The benign face is real: a genuinely held-back capacity, released on a genuine wrong, is catharsis. It enables.
+
+**The hinge.** The same arc — *I was wronged; I have held back; now I let go* — turns on whether the **wrong** and the **capacity** are real. John Wick's dog is a real, discrete trigger and the restrained lethality is established before it fires; Edmond Dantès's framing is a real injustice and the Count's reach is really built across years. Read with trigger and capacity genuine, it is unleashing: a held thing released on cause. Read with the trigger *manufactured* — the wound talked into being, the slight inflated to atrocity — and the "capacity" merely a license to transgress, it is the counterfeit. As the table below has put it: *the dog can be manufactured.*
+
+**The counterfeit in the wild.** The grift keeps unleashing's slot-3 — the righteous, savored release, the relief of finally striking — and fabricates the slot-2 it requires: it manufactures the wrong (you have been replaced, dispossessed, emasculated; here is the enemy who did it) and relabels mere permission-to-harm as a held-back power finally claimed. The recruit is handed a grievance sized to justify any discharge and told the restraint he kept was itself the injury. This is the radicalization pipeline in its general form — the aggrieved-extremist and manosphere-to-violence scripts that convert a manufactured wound into licensed transgression — where the seller supplies the enemy and the absolution while the recruit supplies the act and bears the consequence. (A canonical public-domain recruitment ancestor is partly in hand: the [Falsification log](/cupel/theory/falsification-log/)'s three-register hunt routes the *Communist Manifesto* (#61) and Catiline (#7990) through repricing **+ unleashing** — grievance converted to licensed action — and the contemporary register carries the rest for now, as recognition's does.)
+
+**Distinct from liberation/autonomy, and from repricing.** Liberation throws off an imposed constraint to be *free of* it; unleashing discharges a held-back capacity to *use* it — the payoff is the release exercised, not the cage opened. Repricing collects a debt for a dismissal; unleashing spends a license for a wrong. Grievance-radicalization is unleashing's counterfeit specifically because its payoff is the *discharge* — the strike savored as justified — not freedom and not restitution.
+
+**The guard / value-flow.** Benign when the capacity is real, held back at cost, and released on a real, proportionate wrong the bearer actually suffered (Dantès's framing, Wick's dog). Dark — recruitment — when the wrong is manufactured and the "capacity" is only license: the grievance inflated to warrant the discharge, the restraint recast as the injury, the enemy supplied. The genuine engine earns the release through a real wrong and a really-held capacity; the counterfeit grants the righteous-discharge identity with a manufactured trigger behind it — *slot-3 minus slot-2*.
+
+
+---
+
 ## The pattern these demonstrations share: slot-3 identity minus slot-2 backing
 
 The counterfeits have the **same shape**. Each grants the engine's payoff *identity* (slot 3) while skipping its costly *middle* (slot 2):
@@ -538,8 +607,11 @@ The counterfeits have the **same shape**. Each grants the engine's payoff *ident
 | homecoming/reunion | "I am home / reunited; the loss undone" | the real return (the lost place/bond actually regained, at cost) | manufactured reunion (the séance — contact substituted for the impossible return) |
 | liberation/autonomy | "I am free / my own; unbound" | the real release (the imposed constraint actually thrown off, at cost) | manufactured liberation / false freedom ("forced to be free" — coercion relabeled) |
 | recognition | "I have been seen / known as I am" | the costly fidelity to the honest witness (or the witness-set actually constructed) | simulated recognition (the PUA "I see the real you" / the cult-recruiter's "we see you") |
+| repricing | "I am worth more than they paid / I was cheated" | the real cross-currency worth (the second axis on which the bearer measures higher) | resentment / grievance-populism |
+| wound | "I am the (deeper, truer) wounded self" | the constitutive wound actually borne and preserved through every refused cure | performative-victimhood / trauma-grifting |
+| unleashing | "I am righteously unleashed / justified in the discharge" | a real held-back capacity and a real, proportionate wrong | grievance-radicalization |
 
-This is *why* every engine needs a **wish-valence guard**, and why the guard always takes the same form: *the payoff must carry its real backing (slot 2)* — usually a cost paid, sometimes genuine substance simply there. The benign engine has the real thing behind it; the counterfeit sells the face and pockets the backing. (Belonging has its row above via *Fight Club*; recognition's row is shown above at contemporary-citation strength, with a PD ancestor queued. The remaining two are still *stated*, not yet shown on a page: unleashing's dark twin grants the license without a real wrong — "the dog can be manufactured"; repricing's grants the vindication without the cross-currency worth — pure resentment.)
+This is *why* every engine needs a **wish-valence guard**, and why the guard always takes the same form: *the payoff must carry its real backing (slot 2)* — usually a cost paid, sometimes genuine substance simply there. The benign engine has the real thing behind it; the counterfeit sells the face and pockets the backing. (Belonging has its row above via *Fight Club*; recognition's, repricing's, wound's, and unleashing's rows are shown above at contemporary-citation strength, each with a PD ancestor queued — repricing's grift grants the vindication without the cross-currency worth (pure resentment), wound's grants the standing without the borne-and-preserved injury, and unleashing's grants the license without a real wrong ("the dog can be manufactured").)
 
 **The exceptions that prove the rule — the solvents (election; vindication).** A counterfeit stands alone only if its slot-3 identity *implies an action*. Every row above has one: "I see the hidden order" → distrust/expose; "I am god-like" → unlock/manifest; "I am clean" → exclude the unclean; "I am safe under the protector" → submit. Election's slot-3 is "I am marked / chosen" — a **pure state**, prescribing no action — so its "minus slot-2" residue is *inert*. The bare mark gratifies as a *wish* (David is chosen, full stop), but it cannot *extract*: recruitment needs a prescribed action, and chosenness alone supplies none. So election's dark pole is a **recruitment solvent**, not a face of its own — the chosenness-flattery that opens a recruit ("you are special, destined") deployed *through* belonging (the cult/movement), apotheosis (anointed-for-power), order/legibility (chosen-to-see), or purity (the chosen race), always borrowing the host engine's action. This is why election's genuine gradient isolates yet its counterfeit does not, and why it is **not** in this table — election is the first **solvent**, cupel's fourth result-type (a genuine gradient, not a dual-use engine; defined in [Result-types](/cupel/theory/result-types/)).
 
