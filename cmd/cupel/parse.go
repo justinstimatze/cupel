@@ -416,25 +416,19 @@ func loadEngines(readmePath string, cards []workCard) []engineSpec {
 	// `| [name](…/engines/<slug>/) | counterfeit |`, ordered by tag frequency.
 	// (It used to be `### Name — tagline` subsections; the table rewrite for the
 	// public README silently emptied this parser, blanking the /engines/ list.)
-	linkRe := regexp.MustCompile(`\[([^\]]+)\]\(([^)]+)\)`)
 	var specs []engineSpec
 	for _, line := range strings.Split(sect, "\n") {
 		line = strings.TrimSpace(line)
 		if !strings.HasPrefix(line, "|") {
 			continue
 		}
-		// Split the row into trimmed cells, dropping the empties the leading
-		// and trailing pipes produce.
-		var cells []string
-		for _, c := range strings.Split(strings.Trim(line, "|"), "|") {
-			cells = append(cells, strings.TrimSpace(c))
-		}
+		cells := mdSplitTableCells(line)
 		if len(cells) < 2 {
 			continue
 		}
 		// Only data rows carry the engine link in column 1; the header and the
 		// `|---|` separator have none, so they fall through.
-		m := linkRe.FindStringSubmatch(cells[0])
+		m := mdLink.FindStringSubmatch(cells[0])
 		if m == nil {
 			continue
 		}
