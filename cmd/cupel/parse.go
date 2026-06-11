@@ -378,10 +378,14 @@ func slugify(s string) string {
 	return strings.Trim(b.String(), "-")
 }
 
-// loadEngines reads the canonical engine spec from the README's "## The engines"
-// section. Each "### Name — tagline" block becomes one engineSpec. The README
-// is the single source of truth, so the spec never drifts.
-func loadEngines(readmePath string, cards []workCard) []engineSpec {
+// loadEngines reads the canonical engine list from the README's "## The engines"
+// table (one row per engine: name link + counterfeit). counterfeitsPath, when
+// set, supplies each engine's page body from the per-engine sections of
+// theory/counterfeit-catalog.md; pass "" to skip bodies (e.g. the coverage
+// report, which only needs names + works). The README is the source of truth for
+// the engine set, so it never drifts.
+func loadEngines(readmePath, counterfeitsPath string, cards []workCard) []engineSpec {
+	bodies := loadEngineBodies(counterfeitsPath)
 	raw, err := os.ReadFile(readmePath)
 	if err != nil {
 		return nil
@@ -442,10 +446,48 @@ func loadEngines(readmePath string, cards []workCard) []engineSpec {
 		// list/detail subtitle.
 		specs = append(specs, engineSpec{
 			Name: name, Tagline: cells[1], Slug: slug,
+			Body:  mdBlock(bodies[slug]),
 			Works: worksByEngine[strings.ToLower(name)],
 		})
 	}
 	return specs
+}
+
+// loadEngineBodies parses theory/counterfeit-catalog.md into per-engine markdown
+// bodies keyed by engine slug, so the /engines/<slug>/ pages can show the
+// dual-use counterfeit demonstration the README defers to the site. Each
+// "## <name> — …" section is one body; sections whose slug matches no engine
+// (the doc's intro and trailing summary) simply go unused. Returns nil when the
+// path is empty or unreadable, leaving every engine body blank.
+func loadEngineBodies(path string) map[string]string {
+	if path == "" {
+		return nil
+	}
+	raw, err := os.ReadFile(path)
+	if err != nil {
+		return nil
+	}
+	text := strings.ReplaceAll(string(raw), "\r", "")
+	bodies := map[string]string{}
+	for _, chunk := range strings.Split(text, "\n## ")[1:] {
+		nl := strings.Index(chunk, "\n")
+		if nl < 0 {
+			continue
+		}
+		name := strings.TrimSpace(chunk[:nl])
+		if d := strings.Index(name, " — "); d >= 0 {
+			name = strings.TrimSpace(name[:d])
+		}
+		slug := slugify(name)
+		if slug == "" {
+			continue
+		}
+		// Drop the trailing `---` horizontal rules that separate sections.
+		body := strings.TrimSpace(chunk[nl+1:])
+		body = strings.TrimSpace(strings.TrimRight(body, "-\n "))
+		bodies[slug] = body
+	}
+	return bodies
 }
 
 // engineSlugFromURL pulls <slug> out of a `…/engines/<slug>/` link so the

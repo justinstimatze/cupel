@@ -31,7 +31,7 @@ func runCoverage(args []string) {
 		fmt.Fprintln(os.Stderr, "cupel coverage: no works in", *works)
 		os.Exit(1)
 	}
-	specs := loadEngines(*readme, cards)
+	specs := loadEngines(*readme, "", cards)
 
 	resisters := 0
 	for _, c := range cards {
