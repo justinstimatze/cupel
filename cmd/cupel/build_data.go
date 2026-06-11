@@ -66,7 +66,8 @@ func runBuildData(args []string) {
 	fs := flag.NewFlagSet("build-data", flag.ExitOnError)
 	worksDir := fs.String("works", "works", "input directory (works/*.md) — used only for body file reads; structural data comes from --db")
 	readmePath := fs.String("readme", "README.md", "README.md path (engines source)")
-	counterfeitsPath := fs.String("counterfeits", "theory/counterfeit-catalog.md", "counterfeit catalog path (engine page bodies source)")
+	counterfeitsPath := fs.String("counterfeits", "theory/counterfeit-catalog.md", "counterfeit catalog path (preferred engine page bodies source)")
+	heldbackPath := fs.String("heldback", "theory/held-back-catalog.md", "held-back catalog path (fallback engine page bodies for engines absent from the counterfeit catalog)")
 	clustersPath := fs.String("clusters", "theory/cluster-catalog.md", "cluster catalog path (clusters source)")
 	glossaryPath := fs.String("glossary", "theory/glossary.md", "glossary path (glossary source)")
 	linkablePath := fs.String("linkable", "theory/glossary-linkable.txt", "glossary-term auto-link allow-list (one slug per line)")
@@ -186,7 +187,7 @@ func runBuildData(args []string) {
 	// breakdowns (slots, counterfeit, specimens) the existing /engines/ pages
 	// show. The engineSpec body is already markdown-rendered; emit it as HTML
 	// and let Astro drop it in with set:html.
-	specs := loadEngines(*readmePath, *counterfeitsPath, cards)
+	specs := loadEngines(*readmePath, []string{*counterfeitsPath, *heldbackPath}, cards)
 	specsOut := make([]buildDataEngineSpecJSON, 0, len(specs))
 	for _, s := range specs {
 		// Apply the full linkify pass so engine pages get the same cross-refs
