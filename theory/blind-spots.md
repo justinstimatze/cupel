@@ -16,7 +16,7 @@ Slot-fill produces Bechdel-style false negatives: a subtle case with no on-the-r
 
 ## Self-administered counterfeits
 
-The runtime hook (`cmd/cupel/hook.go`) fires on recruitment-register language — the signature of the **sold** counterfeits (cult, MLM, PUA, etc.). The **self-administered** ones aren't pitched to anyone — they run in one head, emit no recruitment language, and so are structurally invisible to a recruitment-language detector. Part of the catalog is undetectable by this lens by construction. The structural argument is in [the-claim.md](the-claim.md) § "The sold ↔ self-administered spectrum."
+The runtime hook (`cmd/cupel/hook.go`) fires on recruitment-register language — the signature of the **sold** counterfeits (cult, MLM, PUA, etc.). The **self-administered** ones aren't pitched to anyone — they run in one head, emit no recruitment language, and so are structurally invisible to a recruitment-language detector. Part of the catalog is undetectable by this lens by construction. The structural argument is in [the-claim.md](the-claim.md) — "The sold ↔ self-administered spectrum."
 
 ## Demand/supply asymmetry
 

@@ -15,7 +15,7 @@ status: slot-proven; founder-novel cluster pure-counterfeit pole
 
 **The bead.** A 1957 doorstop arguing that the productive mind is the substantive principle the world depends on, ratified in the oath inscribed above Galt's motor: never live for another man, never ask another to live for you. Four engines load.
 
-**Engines.**
+**Engines**
 - **apotheosis** · content · spine · ✓ — Galt's strike, Galt's oath, A is A. The productive-mind transcends the moral order through identification with its own source. Galt's Gulch is the constitutional form of the transcendence.
 - **mastery** · content · also-runs · ✓ — Rearden's metal, d'Anconia's copper, Galt's motor. Mastery is verified by the world's collapse without the producers.
 - **liberation/autonomy** · content · also-runs · ✓ — the strike as refusal-of-relation-as-obligation; the Gulch as freedom-zone. The oath reads simultaneously as autonomy and as apotheosis: the pure-counterfeit pole IS the freedom-from-relation pole.

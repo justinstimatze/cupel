@@ -35,7 +35,7 @@ verified: true
 The companion to [Neon Genesis Evangelion (Shinseiki Evangerion)](/cupel/works/neon-genesis-evangelion/) (anime register) and [A Wizard of Earthsea](/cupel/works/a-wizard-of-earthsea/) (fantasy register) at the **graphic-novel** register: a 12-issue 1986–87 limited series that *dramatizes the superhero genre's apotheosis-counterfeit as its own antagonist*. Two characters carry the engine in opposed sub-modes — Dr. Manhattan as *actually-achieved transcendence and the alienation that comes with it*, Ozymandias as *self-engineered savior whose "saving the world" requires killing half of New York*. Both readings are structurally hostile to the superhero-mythos wish they perform. The engine is *prosecuted*, not delivered.
 
 Three engines run *with* the apotheosis-antagonist spine and carry their own clean slots:
-- **impunity-antagonist-mode** at the *route-3-supernatural-means + multi-bearer* register — four bearers running four sub-variants, each prosecuted in turn (see §Engine 2 below);
+- **impunity-antagonist-mode** at the *route-3-supernatural-means + multi-bearer* register — four bearers running four sub-variants, each prosecuted in turn (see Engine 2 below);
 - **order/legibility** at Rorschach's *investigation of the Comedian murder as the spine* register — the catalog's clearest specimen of order/legibility pursued to the end of the pursuer (Rorschach dies *because* he will not bury the truth);
 - **the double life** at the *Mason / Dreiberg / Kovacs / Juspeczyk* register — the catalog's most-extended graphic-novel articulation of secret-identity as substantive engine, with Hollis Mason's autobiography *Under the Hood* providing first-person commentary on the double-life engine *from inside the genre*.
 

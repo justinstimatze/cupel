@@ -178,7 +178,7 @@ A participant inside the cluster's audience-position walks back from inside. Sig
 
 Specimens: Strauss *The Truth* (2015, primary-text-pending); Manson *Subtle Art* (2016, partial); Horowitz *Hard Thing About Hard Things* (2014, partial); Brown *Daring Greatly* (2012); Doyle *Untamed* (2020).
 
-**2026-06-05 retraction.** An earlier "methodological complication" paragraph claimed Holiday's *Obstacle Is the Way* showed virtue-of-defeat-at-head could serve cluster-canon-extension rather than cluster-refusal. Primary-text probe on Holiday showed the spine is mastery, not virtue-of-defeat — Holiday doesn't actually lead with virtue-of-defeat. The cluster-internal participant-refusal signature is restored to its original cleanliness. See [The Obstacle Is the Way](/cupel/works/the-obstacle-is-the-way/) § Discipline note.
+**2026-06-05 retraction.** An earlier "methodological complication" paragraph claimed Holiday's *Obstacle Is the Way* showed virtue-of-defeat-at-head could serve cluster-canon-extension rather than cluster-refusal. Primary-text probe on Holiday showed the spine is mastery, not virtue-of-defeat — Holiday doesn't actually lead with virtue-of-defeat. The cluster-internal participant-refusal signature is restored to its original cleanliness. See [The Obstacle Is the Way](/cupel/works/the-obstacle-is-the-way/), the Discipline note.
 
 ### Cluster-external systemic-refusal
 An external investigator deploys the *same engine* the cluster runs in counterfeit form *against* the cluster, with falsifiable method. The cluster's dominant engine deployed from outside to dismantle the cluster's counterfeit operation of the same engine.

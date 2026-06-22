@@ -350,11 +350,11 @@ Then it strips out slot-2 — riches by mental method, the means explicitly deni
 
 Virtue of defeat's counterfeit is **ressentiment — the sanctified-grievance grift**: *your defeat is your halo; the strong are evil by their strength; your lack is itself your virtue.* It grants slot-3 (moral superiority held *through* defeat) while faking slot-2 (the real renounced victory — the winning move you had and refused at cost): the counterfeit relabels an *ordinary* loss, mere incapacity, as principled sanctity, with nothing paid.
 
-The documented PD ancestor is **Friedrich Nietzsche**, who described the move from the outside and named it precisely. In *Beyond Good and Evil* (#4363, §260) the slaves revalue the traits of their own defeated condition into virtues, and recast the strong as evil:
+The documented PD ancestor is **Friedrich Nietzsche**, who described the move from the outside and named it precisely. In *Beyond Good and Evil* (#4363, section 260) the slaves revalue the traits of their own defeated condition into virtues, and recast the strong as evil:
 
-> the abused, the oppressed, the suffering "should moralize … it is here that sympathy, the kind, helping hand, the warm heart, patience, diligence, humility, and friendliness attain to honour" (§260)
+> the abused, the oppressed, the suffering "should moralize … it is here that sympathy, the kind, helping hand, the warm heart, patience, diligence, humility, and friendliness attain to honour" (section 260)
 
-> "the 'evil' man arouses fear; according to master-morality, it is precisely the 'good' man who arouses fear" (§260)
+> "the 'evil' man arouses fear; according to master-morality, it is precisely the 'good' man who arouses fear" (section 260)
 
 The *Genealogy of Morals* (#52319, I.13) is sharper still — and Nietzsche's own word for the mechanism is **counterfeiting**, exactly cupel's term of art for the dark pole:
 
@@ -362,7 +362,7 @@ The *Genealogy of Morals* (#52319, I.13) is sharper still — and Nietzsche's ow
 
 > the slaves' "prudence of the lowest order … has, thanks to the counterfeiting and self-deception of weakness, come to masquerade in the pomp of an ascetic, mute, and expectant virtue, just as though the very weakness of the weak … were a voluntary result, something wished, chosen, a deed, an act of merit." (I.13)
 
-That last line *is* the structure: the counterfeit presents weakness — the **absence** of a renounced victory — as if it were the genuine renunciation (the real deed, the real slot-2 cost). The genuine bearer (Socrates, Cyrano) actually had the winning move and refused it; the counterfeit fakes the cost. Note the symmetry with cupel's genuine side: Nietzsche's *noble* "regards HIMSELF as a determiner of values … he is a CREATOR OF VALUES" (§260) — self-conferring by his own standard, exactly what Socrates and Cyrano do through defeat — while the slave's revaluation is the counterfeit of that, incapacity dressed as merit.
+That last line *is* the structure: the counterfeit presents weakness — the **absence** of a renounced victory — as if it were the genuine renunciation (the real deed, the real slot-2 cost). The genuine bearer (Socrates, Cyrano) actually had the winning move and refused it; the counterfeit fakes the cost. Note the symmetry with cupel's genuine side: Nietzsche's *noble* "regards HIMSELF as a determiner of values … he is a CREATOR OF VALUES" (section 260) — self-conferring by his own standard, exactly what Socrates and Cyrano do through defeat — while the slave's revaluation is the counterfeit of that, incapacity dressed as merit.
 
 **Distinct from repricing's resentment-populism** — the nearest face, and the one this engine most risks collapsing into. Both are revaluations driven by the resentment of the strong, but they pull apart on **what they promise**:
 

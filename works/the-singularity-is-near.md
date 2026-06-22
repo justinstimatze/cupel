@@ -20,7 +20,7 @@ pending_refs:
 
 **The bead.** The post-biological self transcended into the techno-merge: biology's slowness named ("our basic neural transactions are several million times slower than contemporary electronic circuits"), the merge engineered through the Law of Accelerating Returns, the ascended state delivered as "trillions of trillions of times more powerful than unaided human intelligence" — bodied through Kurzweil's own 250-supplements-a-day regimen as the bridge until the substrate switches.
 
-**Engines.**
+**Engines**
 - **apotheosis** · content · spine · ✓ — Chapter 7 titled "Ich bin ein Singularitarian"; the section "The Singularity as Transcendence." Post-biological self at machine-merge register; the limits transcended are biology, not jurisdiction.
 - **mastery** · content · also-runs · ✓ — Law of Accelerating Returns as transferable forecasting framework, *plus* the bodily-mastery program: "I take 250 supplements (pills) a day and receive a half-dozen intravenous therapies each week… Approaching this as an engineer, I measure dozens of levels of nutrients (such as vitamins, minerals, and fats), hormones, and metabolic by-products in my blood and other body samples." The reader-craft is the shift from "intuitive linear" to "historical exponential" view.
 - **order/legibility** · content · also-runs · ✓ — the exponential framework as the universe's hidden order: "Exponential growth is a feature of any evolutionary process… we often find not just simple exponential growth, but 'double' exponential growth." Chapter-2 graphs (Moore's Law extended back through five computing paradigms) as the empirical-evidence base.

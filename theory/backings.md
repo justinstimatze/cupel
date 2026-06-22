@@ -34,6 +34,7 @@ This document is built per-engine. The deeply-analyzed engines have backings ext
 - **Existential authenticity** (mid-20c European) — liberation as authentic choice in absurdity. Sartre's *Nausea*, Camus's *The Stranger*, de Beauvoir's *The Ethics of Ambiguity*.
 - **Anarchist mutual-aid cooperation** — no master + active solidarity *without* the dystopian-collapse precondition. Le Guin's *The Dispossessed* (Project Gutenberg #42), Kropotkin's *Mutual Aid* (theory).
 - **Carnivalesque temporary inversion** (Bakhtin's territory) — liberation as ritual, joyful, time-bound overturning rather than permanent break. Rabelais.
+- **Information-age jurisdictional-exit** — liberation as exit from the nation-state itself (cryptography + capital mobility + the encrypted cybereconomy) rather than from a master, a role, or an internal cage; collective obligation re-coded as the cage. Counterfeit-leaning at the pure-counterfeit pole — the single exit-move voids the cost. Named (not yet slot-folded) by Davidson + Rees-Mogg's *The Sovereign Individual* (1997). See [The Sovereign Individual](/cupel/works/the-sovereign-individual/).
 
 **Backings added 2026-06-05 (from the religious-canon density-test triple: Bible / Gita / Thomas dossiers):**
 

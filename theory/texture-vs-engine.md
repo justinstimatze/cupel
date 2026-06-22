@@ -109,7 +109,7 @@ The full catalog (~322 cards as of writing) was swept for other texture-as-spine
 
 ## Cross-reference
 
-- [Glossary](/cupel/theory/glossary/) § texture (vs engine) — the canonical short definition
+- [Glossary](/cupel/theory/glossary/): texture (vs engine) — the canonical short definition
 - [Jurassic Park](/cupel/works/jurassic-park/) — the worked example dossier; the "Texture vs engine" section documents the corrected slot-test
-- [Glossary](/cupel/theory/glossary/) § register — the structural-layer cousin
-- [Glossary](/cupel/theory/glossary/) § antagonist-mode — the engine-mode cousin
+- [Glossary](/cupel/theory/glossary/): register — the structural-layer cousin
+- [Glossary](/cupel/theory/glossary/): antagonist-mode — the engine-mode cousin

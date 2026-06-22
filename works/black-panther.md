@@ -21,6 +21,6 @@ backing: reviewed
 
 **Verdict.** A three-engine entry (legacy + belonging + apotheosis) — the superhero bundle stacking past a single engine, though it sits at three, not the four-plus of the finale. The Killmonger liberation-register is the card's richest dual-use, not a fourth tag.
 
-**Discriminator note.** Per § route 3 sub-variants A + B, the heart-shaped herb (A) and vibranium-suit (B) supply impunity-shape mechanisms — but T'Challa runs *partial-installation* like Cap: he gets the enhanced body and the kinetic-absorption suit, but he gets hurt, is nearly killed by Killmonger, and the wish-payout is *the inheritance claimed and made worthy* (legacy), not *acts-without-typical-consequence* (impunity). Black Panther is route-3 sub-variant-A-and-B partial-installation case (the mechanisms are present; impunity doesn't claim spine).
+**Discriminator note.** Per route 3 sub-variants A + B, the heart-shaped herb (A) and vibranium-suit (B) supply impunity-shape mechanisms — but T'Challa runs *partial-installation* like Cap: he gets the enhanced body and the kinetic-absorption suit, but he gets hurt, is nearly killed by Killmonger, and the wish-payout is *the inheritance claimed and made worthy* (legacy), not *acts-without-typical-consequence* (impunity). Black Panther is route-3 sub-variant-A-and-B partial-installation case (the mechanisms are present; impunity doesn't claim spine).
 
 **Evidence.** `~ reviewed` — from the film (in-copyright). Impunity-engine discriminator:.

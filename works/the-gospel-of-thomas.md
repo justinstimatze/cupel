@@ -13,7 +13,7 @@ related_works:
   - "the-bible :: canon-winner at 16 engines (multi-genre, Abrahamic)"
   - "the-bhagavad-gita :: canon-winner at 10 engines (single-genre, non-Abrahamic)"
 related_theory:
-  - "backings :: needs gnostic-kingdom-within backing addition"
+  - "backings :: the gnostic-kingdom-within backing this dossier slot-proves under liberation/autonomy"
 ---
 
 ## The reading
@@ -25,7 +25,7 @@ related_theory:
 - **mastery** · content · also-runs · ✓ — saying 2 as transferable discipline: "Let him who seeks continue seeking until he finds. When he finds, he will become troubled. When he becomes troubled, he will be astonished, and he will rule over the All." Four-stage progression (seek → find → trouble → astonish → rule) IS the engine's slot-2. Narrower than Bible/Gita mastery (no 613 mitzvot, no three-yogas — just *seek the hidden meaning of these sayings*) but text-internally load-bearing.
 - **order/legibility** · content · also-runs · ✓ — gnostic hidden meaning of the sayings as totalizing-textual-frame. Prologue: "These are the secret sayings which the living Jesus spoke." Saying 5: "Recognize what is in your sight, and that which is hidden from you will become plain to you. For there is nothing hidden which will not become manifest." Much narrower scope than the Bible's totalizing-cosmology (textual rather than cosmological) but unmistakably load-bearing.
 - **legacy/transcendence** · content · also-runs · ✓ — saying 1: "Whoever finds the interpretation of these sayings will not experience death." Couples order/legibility to legacy at engine-level: decoding the sayings = continuing past death. Gnostic-immortality through gnosis (distinct from Christian-resurrection through faith).
-- **liberation/autonomy** · content · also-runs · ✓ — saying 3 inverts: "If those who lead you say to you, 'See, the kingdom is in the sky,' then the birds of the sky will precede you… Rather, the kingdom is inside of you." Saying 14 dismisses fasting, prayer, almsgiving; saying 39 names the Pharisees and scribes as gatekeepers who took the keys of knowledge; saying 99 redefines family as those who do the will. New backing-register for [backings](/cupel/theory/backings/) § liberation/autonomy: **gnostic-kingdom-within freedom-from-external-religious-authority**.
+- **liberation/autonomy** · content · also-runs · ✓ — saying 3 inverts: "If those who lead you say to you, 'See, the kingdom is in the sky,' then the birds of the sky will precede you… Rather, the kingdom is inside of you." Saying 14 dismisses fasting, prayer, almsgiving; saying 39 names the Pharisees and scribes as gatekeepers who took the keys of knowledge; saying 99 redefines family as those who do the will. New backing-register for [backings](/cupel/theory/backings/), under liberation/autonomy: **gnostic-kingdom-within freedom-from-external-religious-authority**.
 
 **The bundle.** Failed-canon anti-prediction test for the memetic-selection hypothesis. Comparison table: Bible (canon-winner, multi-genre) — 16 confirmed; Bhagavad Gita (canon-winner, single-genre) — 10 confirmed; Thomas (canon-loser, single-genre) — **5 confirmed, 10 explicitly absent**. The pattern is structurally clean: canon-winners run 10-16 engines load-bearingly; canon-loser runs 5 deeply with 10 absent. The gap is *not just count* — the *kinds of engines* matter. Thomas concentrates in the **gnostic-specialist cluster** (apotheosis + mastery + order/legibility + legacy + liberation) and lacks the engines that drive mass-recruitment.
 
@@ -91,7 +91,7 @@ Thomas's legacy-engine fires distinctly from Christian eternal-life: gnostic-imm
 
 The structural inversion: salvation is *not* in the temple, *not* in the institution, *not* in the priesthood. Kingdom is within the seeker themselves. Saying 14 dismisses fasting, prayer, almsgiving as the ritual-religion register; saying 39 names the Pharisees and scribes as gatekeepers who took the keys of knowledge; saying 99 redefines family as those who do the will rather than biological kin.
 
-Fires liberation-engine at the *freedom-from-external-religious-authority* register — distinct from Exodus political-liberation and Pauline freedom-in-Christ. **New backing-register for [backings](/cupel/theory/backings/) § liberation/autonomy: gnostic-kingdom-within freedom-from-external-religious-authority.**
+Fires liberation-engine at the *freedom-from-external-religious-authority* register — distinct from Exodus political-liberation and Pauline freedom-in-Christ. **New backing-register for [backings](/cupel/theory/backings/), under liberation/autonomy: gnostic-kingdom-within freedom-from-external-religious-authority.**
 
 ### Partial / queued engines
 

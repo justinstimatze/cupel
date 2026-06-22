@@ -94,7 +94,7 @@ Distinct from *cluster*: a cluster runs counterfeit, a bundle runs enabling. Dis
 
 **primary cluster axis (three-way).** *Recruitment* / *narrative* / *compression*. Recruitment-clusters inject the gravitational-center loop and recruit members. Narrative-clusters run story-form gravitational centers (romance-trap). Compression-clusters package a wisdom-tradition into consumption-deliverable (wisdom-tradition-compression). Different gravitational-center shapes, different signature slot-2-deficits.
 
-**compound cluster.** A single specimen running two or more clusters simultaneously (NXIVM = cult ∩ self-help ∩ MLM; Jonestown = cult ∩ protected-world). Documented in [Cluster catalog](/cupel/theory/cluster-catalog/) § Compound clusters.
+**compound cluster.** A single specimen running two or more clusters simultaneously (NXIVM = cult ∩ self-help ∩ MLM; Jonestown = cult ∩ protected-world). Documented in [Cluster catalog](/cupel/theory/cluster-catalog/), the Compound clusters section.
 
 **bridge specimen.** A work whose function is to *pipeline* readers/viewers between two clusters (e.g. wellness → alt-right; pop-philosophy → manosphere). Bridge specimens are the cluster-bridging finding's operational unit.
 
@@ -141,7 +141,7 @@ This dimension is local to the bundle catalog. Outside that context, "bright pol
 - *structural-frame register* — Covey's Character-Ethic-vs-Personality-Ethic is the book's organizing frame; Ries's anti-mythology framing is the book's organizing claim.
 - *trainable-craft register* — Clear's atomic-habits structure delivers as trainable practice without explicit slot-2-counterfeit naming.
 - *consumption-layer register* — what happens when the work is read by mass audiences, distinct from the work's text-internal register.
-- *care-for-the-record register* — caretaking running at the historical-trauma / archival-silence layer rather than dyadic-personal (Spiegelman's *Maus* preserving Vladek's account; Machado's *In the Dream House* preserving queer-domestic-abuse testimony). Distinct from caretaking-of-a-needy-other; contrasts with the absence-of-record the testimony fills. Named in [Bundle-shape catalog](/cupel/theory/bundle-shape-catalog/) § bearing-witness bundle.
+- *care-for-the-record register* — caretaking running at the historical-trauma / archival-silence layer rather than dyadic-personal (Spiegelman's *Maus* preserving Vladek's account; Machado's *In the Dream House* preserving queer-domestic-abuse testimony). Distinct from caretaking-of-a-needy-other; contrasts with the absence-of-record the testimony fills. Named in [Bundle-shape catalog](/cupel/theory/bundle-shape-catalog/), the bearing-witness bundle.
 
 "Register" is load-bearing **when it names a specific layer the analysis discriminates** (as in the self-help cluster's three-register finding: local-principle / structural-frame / trainable-craft). It is fluency-noise when used as a generic-purpose modifier ("at the X register" where X is just the noun being analyzed; *mastery-register*, *apotheosis-register*, *counterfeit-register* — these collapse to "in the X mode of" and should be rewritten).
 

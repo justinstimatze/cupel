@@ -15,7 +15,7 @@ status: slot-proven; founder-novel cluster pure-counterfeit pole, paired with Th
 
 **The bead.** The creator as Prime Mover — self-sufficient, self-motivated, self-generated — recognized as the source-of-all-value through the courtroom acquittal that ratifies his identity-statement: *I do not recognize anyone's right to one minute of my life. Nor to any part of my energy. Nor to any achievement of mine.*
 
-**Engines.**
+**Engines**
 - **apotheosis** · content · spine · ✓ — Roark as Prime Mover; the creator-vs-parasite manifesto; the courtroom-speech identity-statement ("The creator served nothing and no one. He lived for himself"). The jury acquits; the slot-3 payoff is the bearer's apotheosis-self ratified by acquittal. Founder-novel cluster pure-counterfeit pole, paired with *Atlas Shrugged* (1957).
 - **mastery** · content · also-runs · ✓ — architecture verifies the creator's principle ("the form of a building must follow its function; the structure of a building is the key to its beauty"). Cameron's skyscrapers, Roark's Heller House and Stoddard Temple — the work standing distinguishes the creator from the parasite. The evidentiary engine without which apotheosis collapses to assertion.
 - **liberation/autonomy** · content · also-runs · ✓ — Roark's refusal of relation-as-obligation ("I don't intend to build in order to serve or help anyone… I intend to have clients in order to build"). The Cortlandt explosion is the freedom-act — terminal, unilateral, the trial accepted as cost.

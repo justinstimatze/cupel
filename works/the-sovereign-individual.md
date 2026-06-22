@@ -12,16 +12,16 @@ related_works:
   - "atlas-shrugged :: bibliographic-ancestor pair (Rand's moral-philosophical strike before the information-age-technological strike)"
   - "zero-to-one :: the startup-canon ∩ Sov-constellation bridge via Thiel"
 related_theory:
-  - "backings :: needs *information-age-jurisdictional-exit* added"
+  - "backings :: the *information-age-jurisdictional-exit* liberation/autonomy backing this dossier names"
 ---
 
 ## The reading
 
 **The bead.** The post-jurisdictional self elevated to godlike status — at home in Frankfurt, London, New York, Tokyo, Hong Kong — milked no longer by the state-as-farmer, the technology-of-exit (cryptography, capital mobility, encrypted cybereconomy) operationalized via a 30-point program into a transnational cognitive-elite that owes allegiance to no one.
 
-**Engines.**
+**Engines**
 - **apotheosis** · content · spine · ✓ — "At the highest plateau of productivity, these Sovereign Individuals will compete and interact on terms that echo the relations among the gods in Greek myth. The elusive Mount Olympus of the next millennium will be in cyberspace." The ascended state is answerable to no one — pure-counterfeit pole, the cluster's accountability-stripped register.
-- **liberation/autonomy** · content · also-runs · ✓ — information-age jurisdictional exit ("the new revolution of power which is liberating individuals at the expense of the twentieth-century nationstate"). A new backing register: *information-age-jurisdictional-exit*, distinct from the eleven already named in [backings](/cupel/theory/backings/) § liberation/autonomy. De-couples from collective obligation itself; welfare-state, public good, deference-to-democratic-legitimacy all reframed as the cage.
+- **liberation/autonomy** · content · also-runs · ✓ — information-age jurisdictional exit ("the new revolution of power which is liberating individuals at the expense of the twentieth-century nationstate"). A new backing register: *information-age-jurisdictional-exit*, distinct from those already named in [backings](/cupel/theory/backings/), under liberation/autonomy. De-couples from collective obligation itself; welfare-state, public good, deference-to-democratic-legitimacy all reframed as the cage.
 - **impunity** · content · also-runs · ✓ — "Cyberspace is the ultimate offshore jurisdiction. An economy with no taxes. Bermuda in the sky with diamonds." Accountability infrastructure (audit, taxation, regulation) reframed as the predation itself.
 - **abundance** · content · also-runs · ✓ — wealth-promise calibrated to "the cyberpoor may be those with an income of less than $200,000 a year." The slot-3 floor for not-rich set at $200k; the ceiling at $10B.
 - **mastery** · content · also-runs · ✓ — the megapolitical-analysis framework + the 30-point program (citizenship arbitrage, residency strategy, communications-security practice). The book positions itself as the rare reliable forecaster against a backdrop of "comic" futurists.
@@ -71,7 +71,7 @@ The cage is the nation-state — taxation, regulation, redistribution:
 
 > "You can expect to see almost the complete liberation of productivity. At the same time, we expect to see the death of the modern nationstate. Many of the assurances of equality that Western people have grown to take for granted in the twentieth century are destined to die with it." (l. 422)
 
-This is *information-age-jurisdictional-exit* — distinct from the eleven backings already named under liberation/autonomy in [backings](/cupel/theory/backings/). Closest neighbor is Ferriss's "lifestyle-design escape-the-corporate-cage" at jurisdiction-not-employer scale. Sov de-couples from collective obligation itself; welfare-state, public good, democratic-legitimacy all reframed as the cage. The slot-2 cost is removed by reframing the cost as evidence of the cage.
+This is *information-age-jurisdictional-exit* — distinct from the backings already named under liberation/autonomy in [backings](/cupel/theory/backings/). Closest neighbor is Ferriss's "lifestyle-design escape-the-corporate-cage" at jurisdiction-not-employer scale. Sov de-couples from collective obligation itself; welfare-state, public good, democratic-legitimacy all reframed as the cage. The slot-2 cost is removed by reframing the cost as evidence of the cage.
 
 ### Impunity (also-runs)
 
@@ -134,4 +134,4 @@ Runs at the cluster-frame scale as the totalizing 1997-prediction-of-21st-centur
 
 ### Engine-density observation
 
-Catalog-wide engine counts cluster at 2–4 for cluster-founding texts and cluster-extending alike. Outliers above 4: only Sov (8) and Raven/Jonestown (7). The refined hypothesis is that engine-breadth tracks operational-extension-scope, not cluster-foundation — texts that target all-of-life capture with no domain boundary run 7+. Methodology note at.
+Catalog-wide engine counts cluster at 2–4 for cluster-founding texts and cluster-extending alike. Outliers above 4: only Sov (8) and Raven/Jonestown (7). The refined hypothesis is that engine-breadth tracks operational-extension-scope, not cluster-foundation — texts that target all-of-life capture with no domain boundary run 7+.

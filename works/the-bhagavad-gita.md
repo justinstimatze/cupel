@@ -13,7 +13,7 @@ related_works:
   - "the-bible :: Abrahamic counterpart at 16+2 engines"
   - "the-iliad :: Western epic at 1 engine (under-counted); the Gita is *embedded in* the Mahabharata which is the Eastern epic counterpart to Iliad+Odyssey"
 related_theory:
-  - "backings :: needs moksha-via-yogic-discipline backing addition"
+  - "backings :: confirms the karma-yoga (moksha) backing under liberation/autonomy; names bhakti + jnana yoga as adjacent registers"
 ---
 
 ## The reading
