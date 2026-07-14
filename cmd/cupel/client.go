@@ -94,9 +94,24 @@ func embedModel() string {
 	return "nomic-embed-text"
 }
 
+// embedKeepAlive controls how long ollama keeps the embed model resident after
+// a request. Default -1 (never unload) so the CPU embedder doesn't cold-reload
+// on the next idle prompt and blow the hook's context deadline — the failure
+// behind the "context deadline exceeded → lexical fallback" fallbacks that pile
+// up whenever ollama's default 5-min keep-alive lets nomic-embed-text unload
+// between prompts. Override with CUPEL_EMBED_KEEP_ALIVE (an ollama duration
+// string like "5m", or seconds as a number).
+func embedKeepAlive() any {
+	if v := os.Getenv("CUPEL_EMBED_KEEP_ALIVE"); v != "" {
+		return v
+	}
+	return -1
+}
+
 type embedReq struct {
-	Model string   `json:"model"`
-	Input []string `json:"input"`
+	Model     string   `json:"model"`
+	Input     []string `json:"input"`
+	KeepAlive any      `json:"keep_alive,omitempty"`
 }
 type embedResp struct {
 	Embeddings [][]float64 `json:"embeddings"`
@@ -105,7 +120,7 @@ type embedResp struct {
 // embedTexts returns one L2-normalized vector per input (normalized so cosine
 // is a plain dot product downstream). A single round trip; ollama batches.
 func embedTexts(ctx context.Context, texts []string) ([][]float64, error) {
-	body, err := json.Marshal(embedReq{Model: embedModel(), Input: texts})
+	body, err := json.Marshal(embedReq{Model: embedModel(), Input: texts, KeepAlive: embedKeepAlive()})
 	if err != nil {
 		return nil, fmt.Errorf("ollama embed: marshal request: %w", err)
 	}
